@@ -1,21 +1,34 @@
 <!DOCTYPE html>
-
 <head>
   <meta charset="utf-8">
   <title>NODE JS 서버 테스트</title>
-  <link href="styles/UI.css" rel="stylesheet" type="text/css">
-  <link href="styles/sendBox.css" rel="stylesheet" type="text/css">
+
+  <link href="stylesheets/UI.css" rel="stylesheet" type="text/css">
+  <link href="stylesheets/chatBox.css" rel="stylesheet" type="text/css">
+  <script defer src="/socket.io/socket.io.js"></script>
+  <script defer src="javascripts/script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 </head>
-<script src = "../node.js"
-<script>
-  var socket = io();
-</script>
 
 <body>
   <h1> NODE JS SERVER TEST</h1>
-  <ul id = "chatlog"></ul>
-  <form action = "">
-    <input id = "chat" autocomplete = 0ff ></input>
-    <button id = "sendButton">보내기</button>
-  </form>
+  <!--테스트용 로그인 시스템-->
+  <div class = "upperBar">
+    <div class = "testLogin">
+     <ul>현재 이름</ul>
+     <ul id = "username">guest</ul> 
+    </div>
+    <p>&nbsp</p>
+    <button id = "cname" onclick = "changeNameTest()">변경하기</button>
+  </div>
+  <!--채팅 창 및 버튼-->
+  <div class = "chatbox">
+    <ul id = "chatlog"></ul>
+    <form id = "submitter" action = "">
+      <input input id = "chat" autocomplete = "off"></input>
+      <button class = "sendButton">보내기</button>
+    </form>
+  </div>
+
 </body>

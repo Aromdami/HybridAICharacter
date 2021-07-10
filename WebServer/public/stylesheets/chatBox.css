@@ -1,0 +1,102 @@
+
+form {
+    position:fixed;
+    bottom: 0%;
+    width:100%;
+    background: rgb(226, 226, 226);
+    padding:5px;
+}
+
+form input{
+    border:  1px;
+    border-radius: 5px;
+    background: rgb(226, 226, 226);
+    width: 90%;
+    height:30px;
+    margin-right: .5%;
+    font-size:15px;
+}
+
+.sendButton{
+    background:rgb(252, 214, 0);
+    border: 1px;
+    border-radius:5px;
+    width:7.5%;
+    height:30px;
+    
+    cursor:pointer;
+    transition:400ms ease all;
+   
+
+    font-size:15px;
+    font-weight:bold;
+}
+ .sendButton:hover{
+    background:rgb(255, 242, 122);
+  }
+  .sendButton:before,.sendButton:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:3px;
+    width:0;
+    transition:300ms ease all;
+  }
+  .sendButton:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+  }
+  .sendButton:hover:before,.sendButton:hover:after{
+    width:100%;
+    transition:400ms ease all;
+  }
+
+
+/*채팅 말풍선*/
+#chatLog{
+
+    overflow:auto;
+    width: 100%;
+    height:30%;
+    
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+
+    
+}
+
+.mine{
+    align-items:flex-end;
+    background-color:rgb(252, 214, 0);
+    border-radius:10px;
+
+    border: 3px;
+    padding: 4px;
+    margin: 10px auto 10px 10px;
+    width:fit-content;
+    max-width: 50%;
+    max-height:fit-content;
+
+    font-size:20px;
+}
+
+
+.others{
+    align-items:flex-start;
+    background-color: rgb(255, 255, 255);
+    border-radius:10px;
+
+    border: 3px;
+    padding: 4px;
+    margin: 10px auto 10px 10px;
+    width:fit-content;
+    max-width: 50%;
+    max-height:fit-content;
+
+    font-size:20px;
+}

@@ -1,16 +1,15 @@
 {
-  "name": "javascript_3",
-  "version": "1.0.0",
-  "main": "index.js",
+  "name": "webserver",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/www"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1",
-    "request": "^2.88.2"
-  },
-  "devDependencies": {},
-  "description": ""
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "morgan": "~1.9.1",
+    "socket.io": "^4.1.2"
+  }
 }
