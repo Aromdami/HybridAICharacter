@@ -1,34 +1,66 @@
-
-form {
-    position:fixed;
-    bottom: 0%;
-    width:100%;
-    background: rgb(226, 226, 226);
-    padding:5px;
+#chatUI{
+  width: 100%;
+  height:fit-content;
+  margin: 0 auto;
+  display:flex;
+  justify-content: space-around;
 }
 
-form input{
+.chatBox{
+  width: 80%;
+  height:100%;
+  border:2px solid rgb(150, 150, 150);
+  border-radius:5px;
+  padding : 5px 5px 5px 5px;
+  margin: 3%;
+}
+.outputBox
+{
+  background-color:rgb(178, 199, 218);
+  height:600px;
+  overflow-y:auto;
+  padding: 10px;
+}
+
+#chatLog{
+  overflow:auto;
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  padding: 0px;
+}
+
+#submitter {
+    display:block;
+    bottom: 0%;
+    width:inherit;
+    background: rgb(255, 255, 255);
+    padding:5px;
+    margin: 0px;
+}
+
+#submitter input{
     border:  1px;
     border-radius: 5px;
-    background: rgb(226, 226, 226);
+    background: rgb(255, 255, 255);
     width: 90%;
     height:30px;
     margin-right: .5%;
-    font-size:15px;
+    font-size:1.0vw;
 }
 
 .sendButton{
     background:rgb(252, 214, 0);
+    
     border: 1px;
     border-radius:5px;
-    width:7.5%;
+    width:8%;
     height:30px;
     
     cursor:pointer;
     transition:400ms ease all;
    
-
-    font-size:15px;
+    font-size:0.8vw;
     font-weight:bold;
 }
  .sendButton:hover{
@@ -56,20 +88,6 @@ form input{
 
 
 /*채팅 말풍선*/
-#chatLog{
-
-    overflow:auto;
-    width: 100%;
-    height:30%;
-    
-    display: flex;
-    flex-direction: column;
-    margin: 0px;
-    padding: 0px;
-
-    
-}
-
 .mine{
     align-items:flex-end;
     background-color:rgb(252, 214, 0);
@@ -82,13 +100,13 @@ form input{
     max-width: 50%;
     max-height:fit-content;
 
-    font-size:20px;
+    font-size:1.0vw;
 }
 
 
 .others{
     align-items:flex-start;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(250, 250, 250);
     border-radius:10px;
 
     border: 3px;
@@ -98,5 +116,74 @@ form input{
     max-width: 50%;
     max-height:fit-content;
 
-    font-size:20px;
+    font-size:1.0vw;
 }
+
+/*채팅방 메뉴 관련*/
+.sideBar{
+  width: 10%;
+  border: 2px solid rgb(122, 202, 255);
+  border-radius:5px;
+  padding : 5px 5px 5px 5px;
+  margin: 3%;
+}
+
+.CR{
+  background:none;
+  width:inherit;
+  border: none;
+  height:30px;
+
+  color:rgb(150, 150, 150);
+  
+  cursor:pointer;
+  transition:200ms ease all;
+
+  font-size:1.0vw;
+  font-weight:bold;
+
+  padding:  10%  10% 10% 10%;
+  margin: 0% 0% 5% 5%;
+}
+
+.CR.ON{
+  color:rgb(0,0,0);
+}
+.CR:hover{
+  color:rgb(122, 202, 255);
+}
+.CR.ON:hover{
+  color:rgb(0,0,0);
+}
+.CR:before,.CR:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:3px;
+  width:0;
+  transition:300ms ease all;
+}
+.CR:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.CR:hover:before,.CR:hover:after{
+  width:100%;
+  transition:400ms ease all;
+}
+
+
+.CRstat{
+  font-size:1.2vw;
+  color: rgb(121, 255, 127);
+}
+.CRstat.ON{
+  color:rgb(65, 179, 255);
+}
+.CRstat.OFF{
+  color:rgb(150, 150, 150);
+}
+

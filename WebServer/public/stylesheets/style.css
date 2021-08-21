@@ -1,8 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 14px "Nanum gothic" ,sans-serif;
+  
 }
 
 a {
   color: #00B7FF;
+}
+
+.sTitle {
+  text-align: center;
+  font-size: 1.2vw;
+  font-weight:bold;
+  border-bottom: 1px solid rgb(150, 150, 150);
+  padding: 10px 10px 10px 10px;
+  margin: 0px 0px 0px 0px;
+}
+
+.sTitle.append{
+  margin: 60% 0 0 0;
 }

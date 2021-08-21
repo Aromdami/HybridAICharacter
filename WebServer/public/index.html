@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <head>
   <meta charset="utf-8">
-  <title>NODE JS 서버 테스트</title>
-
+  <title>채팅 페이지</title>
+  <style>
+    </style>
   <link href="stylesheets/UI.css" rel="stylesheet" type="text/css">
   <link href="stylesheets/chatBox.css" rel="stylesheet" type="text/css">
+  <link href="stylesheets/style.css" rel="stylesheet" type="text/css">
   <script defer src="/socket.io/socket.io.js"></script>
   <script defer src="javascripts/script.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 
 </head>
 
 <body>
-  <h1> NODE JS SERVER TEST</h1>
   <!--테스트용 로그인 시스템-->
   <div class = "upperBar">
     <div class = "testLogin">
@@ -20,15 +21,35 @@
      <ul id = "username">guest</ul> 
     </div>
     <p>&nbsp</p>
-    <button id = "cname" onclick = "changeNameTest()">변경하기</button>
+    <button class = "testBtn" id = "cname" onclick = "changeNameTest()">변경하기</button>
+    <button class = "testBtn" id = "testJoin">참여하기</button>
   </div>
-  <!--채팅 창 및 버튼-->
-  <div class = "chatbox">
-    <ul id = "chatlog"></ul>
-    <form id = "submitter" action = "">
-      <input input id = "chat" autocomplete = "off"></input>
-      <button class = "sendButton">보내기</button>
-    </form>
+
+  <div id = "chatUI">
+    <div class = "sideBar">
+      <div class = "sTitle">채팅방 리스트</div>
+      <div id = "chatRooms">
+        <button class = "CR ON" data-id = "1"> 채팅방 1번</button><span class= "CRstat ON" data-id = "1">●</span>
+        <button class = "CR" data-id = "2"> 채팅방 2번</button><span class= "CRstat OFF" data-id = "2">●</span>
+        <button class = "CR" data-id = "3"> 채팅방 3번</button><span class= "CRstat OFF" data-id = "3">●</span>
+      </div>
+      <div class = "sTitle append" >사용자 리스트</div>
+      <div id = "userlist"></div>
+    </div>
+    <!--채팅 창 및 버튼-->
+
+    <div class = "chatBox">
+      <div class = "sTitle" id = "chatTitle">채팅방 1번</div>
+      <div class = "outputBox">
+        <ul id = "chatlog"></ul>
+      </div>
+      <div class = "inputBox">
+        <form id = "submitter" action = "">
+          <input input input id = "chat" autocomplete = "off"></input>
+          <button class = "sendButton">보내기</button>
+        </form>
+      </div>
+    </div>
   </div>
 
 </body>
