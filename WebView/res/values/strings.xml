@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">WebView</string>
+    <string name="open">패널&#160;&#160;열기</string>
+    <string name="close">패널&#160;&#160;닫기</string>
+    <string name="move">이동</string>
+    <string name="address">https:///</string>
+</resources>
