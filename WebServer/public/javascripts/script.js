@@ -111,13 +111,13 @@ socket.on
     }
 );
 
-//채팅방 들어가고 나가기 표현
-/*
+//채팅방 들어가고 나가기 표z현
+
 socket.on
 ('enter chat', 
     function (data)
     {
-        
+        $('#chatLog').append('<div class="inNout"><strong>${data}</strong>님께서 들어오셨습니다.</div>')
     }
 );
 
@@ -125,7 +125,7 @@ socket.on
 ('leave chat', 
     function (data)
     {
-        
+        $('#chatLog').append('<div class="inNout"><strong>${data}</strong>님께서 나가셨습니다.</div>')
     }
 );
-*/
+
