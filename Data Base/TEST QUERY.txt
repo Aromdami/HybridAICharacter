@@ -94,7 +94,7 @@ SELECT name, pname, croom, cday1, cday2, startTime, endTime
 FROM 수업 classes
 INNER JOIN 교수 profs
 	ON classes.pid = profs.id
-WHERE (cday1 = strftime('%w', 'now', 'localtime') or cday2 = strftime('%w', 'now', 'localtime')) AND (strftime('%H:%M', CURRENT_TIME) > startTime AND strftime('%H:%M', CURRENT_TIME) < endTime)
+WHERE (cday1 = strftime('%w', 'now', 'localtime') or cday2 = strftime('%w', 'now', 'localtime')) AND (strftime('%H:%M', 'now', 'localtime') > startTime AND strftime('%H:%M', 'now', 'localtime') < endTime)
 ORDER BY cday1 ASC, startTime ASC
 
 
