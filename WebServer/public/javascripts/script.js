@@ -5,8 +5,21 @@ const testJoin = document.getElementById('testJoin');
 const userlist = document.getElementById('userlist');
 
 var room = 1;
-var usrName =  document.getElementById("username").innerText;
 var socketID = socket.id;
+
+var usrName;
+/* 사용자 정보 초기화 */
+$(document).ready(function(){
+    usrName = location.href.substr(
+        location.href.lastIndexOf('=') + 1
+    );
+        
+    socket.emit('access', usrName);
+    socket.emit('users');
+    
+   $("#username").html(usrName);
+});
+
 
 /* 채팅 전송 기능*/
 
@@ -40,31 +53,7 @@ const msgLogging = (message, isMine) => {
     return msgLog;
 };
 
-/*이름 변경*/
-function changeNameTest()
-{
-    var newName = prompt("새로운 이름을 입력해주세요");
-    if (newName === "")
-        newName = usrName;
-    else
-        document.getElementById("username").innerText = newName;
-    usrName = newName;
 
-}
-
-function signIn()
-{
-    var signIn = document.getElementsByClassName('form_Login');
-    var signUp = document.getElementsByClassName('form_Join');
-    
-}
-
-/* 테스트용 로그인*/
-$('#testJoin').click(function (e){
-    e.preventDefault();
-    socket.emit('access', usrName);
-    socket.emit('users');
-});
 
 /* 채팅방 접속 */
 

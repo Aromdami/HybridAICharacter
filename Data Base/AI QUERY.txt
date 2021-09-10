@@ -1,0 +1,23 @@
+1. 모든 수업을 보여줘, 올해 수업을 보여줘, 이 건물에 무슨 수업이 있어?, 에러 등
+
+SELECT name, pname, croom, cday1, cday2, startTime, endTime FROM 수업 classes INNER JOIN 교수 profs ON classes.pid = profs.id ORDER BY cday1 ASC, startTime ASC
+
+2. 오늘 있는 수업을 보여줘
+
+SELECT name, pname, croom, cday1, cday2, startTime, endTime FROM 수업 classes INNER JOIN 교수 profs ON classes.pid = profs.id WHERE cday1 = strftime('%w', 'now', 'localtime') or cday2 = strftime('%w', 'now', 'localtime') ORDER BY startTime ASC
+
+
+3. ㅁㅁㅁ 교수님 수업이 뭐 있는지 알려줘
+
+SELECT name, croom, cday1, cday2, startTime, endTime FROM 수업 classes INNER JOIN 교수 profs ON classes.pid = profs.id WHERE profs.pname = \"ㅁㅁㅁ\" ORDER BY cday1 ASC, startTime ASC
+
+4. 지금 N호실 수업 뭐 하고 있어? N호실 비어 있어?
+(수업 종료 시간 데이터 추가해야함)
+
+SELECT name, pname, croom, cday1, cday2, startTime, endTime FROM 수업 classes INNER JOIN 교수 profs ON classes.pid = profs.id WHERE (cday1 = strftime('%w', 'now', 'localtime') or cday2 = strftime('%w', 'now', 'localtime')) AND (strftime('%H:%M', 'now', 'localtime') > startTime AND strftime('%H:%M', 'now', 'localtime') < endTime) ORDER BY cday1 ASC, startTime ASC
+
+
+
+5. ㅇㅇㅇ 수업 어디서 해?
+
+SELECT pname, croom, startTime, endTime FROM 수업 classes INNER JOIN 교수 profs ON classes.pid = profs.id WHERE name = \"ㅇㅇㅇ\" ORDER BY cday1 ASC, startTime ASC

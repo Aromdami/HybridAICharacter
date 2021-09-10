@@ -1,57 +1,18 @@
 <!DOCTYPE html>
 <head>
   <meta charset="utf-8">
-  <title>채팅 페이지</title>
-  <style>
-    </style>
+  <title>로그인 페이지</title>
+
   <link href="stylesheets/UI.css" rel="stylesheet" type="text/css">
   <link href="stylesheets/chatBox.css" rel="stylesheet" type="text/css">
   <link href="stylesheets/style.css" rel="stylesheet" type="text/css">
-  <script defer src="/socket.io/socket.io.js"></script>
-  <script defer src="javascripts/script.js"></script>
+  <script defer src="javascripts/login.js"></script>
   <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-
 </head>
 
 <body>
-  <!--테스트용 로그인 시스템-->
-  <div class = "upperBar">
-    <div class = "testLogin">
-     <ul>현재 이름</ul>
-     <ul id = "username">guest</ul> 
+    <div class = "menuItems">
+        <button class = "loginBtn" id="gstAcc">Guest Login</button>
+        <button class = "loginBtn"id="csrAcc">CSR Login</button>
     </div>
-    <p>&nbsp</p>
-    <button class = "testBtn" id = "cname" onclick = "changeNameTest()">변경하기</button>
-    <button class = "testBtn" id = "testJoin">참여하기</button>
-  </div>
-
-  <div id = "chatUI">
-    <div class = "sideBar">
-      <div class = "sTitle">채팅방 리스트</div>
-      <div id = "chatRooms">
-        <button class = "CR ON" data-id = "1"> 채팅방 1번</button><span class= "CRstat ON" data-id = "1">●</span>
-        <button class = "CR" data-id = "2"> 채팅방 2번</button><span class= "CRstat OFF" data-id = "2">●</span>
-        <button class = "CR" data-id = "3"> 채팅방 3번</button><span class= "CRstat OFF" data-id = "3">●</span>
-      </div>
-      <div class = "sTitle append" >사용자 리스트</div>
-      <div id = "userlist">
-
-      </div>
-    </div>
-    <!--채팅 창 및 버튼-->
-
-    <div class = "chatBox">
-      <div class = "sTitle" id = "chatTitle">채팅방 1번</div>
-      <div class = "outputBox">
-        <ul id = "chatlog"></ul>
-      </div>
-      <div class = "inputBox">
-        <form id = "submitter" action = "">
-          <input input input id = "chat" autocomplete = "off"></input>
-          <button class = "sendButton">보내기</button>
-        </form>
-      </div>
-    </div>
-  </div>
-
 </body>
