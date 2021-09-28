@@ -238,3 +238,8 @@ h1{
   .loginBtn:hover:before {
     width: 100%;
   }
+
+  .character{
+    position:relative;
+    padding: 10px 0px 10px 0px;
+  }

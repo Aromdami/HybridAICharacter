@@ -7,17 +7,21 @@ const userlist = document.getElementById('userlist');
 var room = 1;
 var socketID = socket.id;
 
+
 var usrName;
 /* 사용자 정보 초기화 */
 $(document).ready(function(){
     usrName = location.href.substr(
         location.href.lastIndexOf('=') + 1
     );
-        
     socket.emit('access', usrName);
     socket.emit('users');
     
    $("#username").html(usrName);
+   if (usrName == "CSR")
+    {
+        socket.emit('recover chat', {room});
+    }
 });
 
 
@@ -31,17 +35,32 @@ chat.addEventListener('submit', function (e) {
     message.value = '';
     message.focus();
     e.preventDefault();
+
+    
 });
 
 //상대방 채팅 메시지 서버에서 가져옴
 socket.on
 (
     'chat message', 
-    function(message)
+    function(message, name)
     {
+        if (usrName == "guest" && name == "CSR")
+            tts(message, {lang:"ko-kr", rate:1, pitch:1});
         chatLog.appendChild(msgLogging(message, false));
     }
 );
+
+
+socket.on
+(
+    'recover msg', 
+    function(tag, message)
+    {
+            chatLog.appendChild(msgLogging(message, tag));
+    }
+);
+
 
 //전송, 수신된 메시지 구분 후 출력
 const msgLogging = (message, isMine) => {
@@ -52,6 +71,7 @@ const msgLogging = (message, isMine) => {
     msgLog.innerText = message;
     return msgLog;
 };
+
 
 
 
@@ -81,6 +101,11 @@ $('#chatRooms').on("click", "button", function(){
     //새로고침 용 이전 채팅방에서 사용했던 채팅을 비워줌
     $('#chatlog').html("");
     socket.emit('join chat', {room});
+
+    if (usrName == "CSR")
+    {
+        socket.emit('recover chat', {room});
+    }
 });
 
 //채팅방에 들어와 있는 사용자 표시
@@ -100,7 +125,7 @@ socket.on
     }
 );
 
-//채팅방 들어가고 나가기 표z현
+//채팅방 들어가고 나가기 표현
 
 socket.on
 ('enter chat', 
@@ -118,3 +143,20 @@ socket.on
     }
 );
 
+
+function tts(message, option)
+{
+    if (typeof SpeechSynthesisUtterance === "undefined") 
+        return;
+    
+
+    window.speechSynthesis.cancel();
+    const speech = new SpeechSynthesisUtterance();
+
+    speech.lang = option.lang;
+    speech.rate = option.rate;
+    speech.pitch = option.pitch;
+    speech.text = message;
+
+    window.speechSynthesis.speak(speech);
+}

@@ -6,12 +6,88 @@ var http = require('http');
 var port = 3000;
 var server = http.createServer(app);
 
-var regUsers = {};
 var liveUsers = {};   
 
 
-
 app.use(express.static('public'))
+
+//채팅 내역 복구, 저장
+const chatDB = require('sqlite3').verbose();
+
+//AI 활용용도의 mySQL
+const aiDB = require('mysql');
+
+var msqlDB = aiDB.createConnection(
+  {
+    host: 'localhost',
+    user: 'root',
+    password: '12345',
+    database: 'test_DB'
+  }
+);
+
+msqlDB.connect();
+
+msqlDB.query('SELECT DATE_FORMAT(NOW(), \'%H:%I:%s\') as solution',
+  function (error, results, fields)
+  {
+    if(error) throw error;
+
+    console.log("현재 DB 기준 시각" + results[0].solution + "입니다.");
+    console.log(results);
+  }
+);
+
+msqlDB.end();
+
+
+let chatLog = new chatDB.Database('..\public\db\chatlog.db', 
+  (err) =>{
+    if (err)
+      return console.error(err.message);
+    console.log('채팅 로그 DB 연결');
+    chatLogDB_Init();
+  }
+);
+
+//초기 테이블 생성 및 데이터 업로드(최초 1회만 실행됨)
+function chatLogDB_Init()
+{
+  var qry1, qry2, qry3;
+  //채팅방 대화 기록 용 테이블 생성
+  qry1 = 'CREATE TABLE IF NOT EXISTS chatR';
+  qry2 = '(user VARCHAR(10), sentChat text, sentDate DATE, sentTime time, ';
+  qry3 = 'CONSTRAINT arrival PRIMARY KEY (sentDATE, sentTime))';
+
+  chatLog.run(qry1 + '1' + qry2 + qry3);
+  console.log('채팅방 1번용 로그 DB 테이블 생성 완료');
+  chatLog.run(qry1 + '2' + qry2 + qry3);
+  console.log('채팅방 2번용 로그 DB 테이블 생성 완료');
+  chatLog.run(qry1 + '3' + qry2 + qry3);
+  console.log('채팅방 3번용 로그 DB 테이블 생성 완료');
+}
+
+//채팅 로그 불러오기 기능 (현재 콘솔로만 가능)
+function loadChatLog(roomNo)
+{
+  var qry1, qry2;
+  qry1 = "SELECT * FROM chatR" + roomNo;
+  qry2 = " ORDER BY sentDate ASC, sentTime ASC";
+
+  chatLog.all(qry1 + qry2, [], 
+    (err, datas)=>{
+        if (err)
+            throw err;
+        
+        datas.forEach(
+            (datas)=>{
+                console.log(datas);
+            }
+        );
+    }
+  );
+
+}
 
 
 /*============================================*/
@@ -38,9 +114,19 @@ io.on('connection', (socket) => {
   socket.on('chat message', function(message, name, room){ 
     const msg = name + ': ' + message;
     console.log(msg);
-    socket.to('room' + room).emit('chat message', msg);
+
+    //채팅 내역 DB 기록
+    var qry1 = "INSERT or IGNORE INTO chatR" + room;
+    //사용자 및 메시지
+    var qry2 = "  VALUES  (\"" + name + "\", \"" + message + "\"";
+    //전송 시각
+    var qry3 = ", strftime('%Y-%m-%d', 'now', 'localtime')" + ", strftime('%H:%M:%f', 'now', 'localtime'))";
+    console.log("NEW QRY IS " + qry1 + qry2 + qry3);
+    chatLog.run(qry1 + qry2 + qry3);
+    socket.to('room' + room).emit('chat message', message, name);
   });
 
+  
 
   //채팅방 들어감
   socket.on('join chat', function(info)
@@ -52,12 +138,40 @@ io.on('connection', (socket) => {
     socket.join('room' + nxt);
     
 
-    liveUsers[usrname].room = info.room; 
-
+    liveUsers[usrname].room = info.room;     
     updateUser(prv, nxt, socket.id);
+
+    //loadChatLog(info.room);
   });
   
+  socket.on('recover chat', function (info)
+  {
+    console.log('Recover chat Starts...');
 
+    var qry1, qry2;
+    qry1 = "SELECT * FROM chatR" + info.room;
+    qry2 = " ORDER BY sentDate ASC, sentTime ASC";
+  
+    chatLog.all(qry1 + qry2, [], 
+      (err, datas)=>{
+          if (err)
+              throw err;
+      
+          datas.forEach(
+              (datas)=>{
+                  let tag = true;
+                  if (datas.user == "guest")
+                    tag = false;
+                  else
+                    tag = true;
+                  
+                  io.to(socket.id).emit('recover msg', tag, datas.sentChat);
+              }
+          );
+      }
+      
+    );
+  });
   socket.on('disconnect', function(){
     console.log('사용자 접속 종료');
 
@@ -204,11 +318,8 @@ let classDB = new classInfo.Database('..\public\db\datas.db',
 
     init_classDB_infos();
     console.log('수업 DB 초기데이터 점검 완료');
-
-    query5();
   }
 );
-module.exports = classDB;
 
 //초기 테이블 생성 및 데이터 업로드(최초 1회만 실행됨)
 function classDB_Init()

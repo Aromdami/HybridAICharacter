@@ -127,7 +127,7 @@
 
 /*채팅방 메뉴 관련*/
 .sideBar{
-  width: 10%;
+  width: 11%; 
   border: 2px solid rgb(122, 202, 255);
   border-radius:5px;
   padding : 5px 5px 5px 5px;

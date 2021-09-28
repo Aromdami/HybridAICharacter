@@ -2,57 +2,52 @@
 
 CREATE TABLE IF NOT EXISTS 교수
 (	
-	pName VARCHAR(20), ID VARCHAR2(4) NOT NULL, 
-
-	CONSTRAINT prf_PK 
-		PRIMARY KEY(ID)
+	pName VARCHAR(20) DEFAULT NULL, ID VARCHAR(4) NOT NULL, 
+	PRIMARY KEY(ID)
 );
-
 
 CREATE TABLE IF NOT EXISTS 수업 
 (
-	ID VARCHAR(4), Name VARCHAR2(30), pID VARCHAR2(4), cRoom NUMBER(4), cDay1 NUMBER(1), cDay2 NUMBER(1), startTime TIME, endTime TIME,
+	ID VARCHAR(4), Name VARCHAR(30), pID VARCHAR(4), cRoom INT(4), cDay1 INT(1), cDay2 INT(1), startTime TIME, endTime TIME,
 
-	CONSTRAINT class_PK 
-		PRIMARY KEY (ID),
-	CONSTRAINT class_FK 
-		FOREIGN KEY (pID)
+    PRIMARY KEY (ID),
+	FOREIGN KEY (pID)
 		REFERENCES 교수(ID)
 );
 
 
-INSERT or IGNORE INTO 교수 VALUES ("정상화", "P01");
-INSERT or IGNORE INTO 교수 VALUES ("류광렬", "P02");
-INSERT or IGNORE INTO 교수 VALUES ("홍봉희", "P03");
-INSERT or IGNORE INTO 교수 VALUES ("최윤호", "P04");
-INSERT or IGNORE INTO 교수 VALUES ("감진규", "P05");
-INSERT or IGNORE INTO 교수 VALUES ("우균", "P06");
-INSERT or IGNORE INTO 교수 VALUES ("이기준", "P07");
-INSERT or IGNORE INTO 교수 VALUES ("탁성우", "P08");
-INSERT or IGNORE INTO 교수 VALUES ("염근혁", "P09");
-INSERT or IGNORE INTO 교수 VALUES ("송길태", "P10");
+INSERT IGNORE INTO 교수 VALUES ('정상화', 'P01');
+INSERT IGNORE INTO 교수 VALUES ('류광렬', 'P02');
+INSERT IGNORE INTO 교수 VALUES ('홍봉희', 'P03');
+INSERT IGNORE INTO 교수 VALUES ('최윤호', 'P04');
+INSERT IGNORE INTO 교수 VALUES ('감진규', 'P05');
+INSERT IGNORE INTO 교수 VALUES ('우균', 'P06');
+INSERT IGNORE INTO 교수 VALUES ('이기준', 'P07');
+INSERT IGNORE INTO 교수 VALUES ('탁성우', 'P08');
+INSERT IGNORE INTO 교수 VALUES ('염근혁', 'P09');
+INSERT IGNORE INTO 교수 VALUES ('송길태', 'P10');
 
 
-INSERT or IGNORE INTO 수업 VALUES
-	("CP01", "임베디드시스템", "P01", 6514, 1, 3, '15:00', '16:15');
-INSERT or IGNORE INTO 수업 VALUES
-	("CP02", "AI프로그래밍", "P02", 6409, 2, 4, '15:00', '16:15');
-INSERT or IGNORE INTO 수업 VALUES
-	("CP03", "자료구조", "P03", 6515, 1, 3, '10:30', '11:45');
-INSERT or IGNORE INTO 수업 VALUES
-	("CP04", "네트워크보안", "P04", 6203, 1, 3, '09:00', '10:15');
-INSERT or IGNORE INTO 수업 VALUES
-	("CP05", "인공지능", "P05", 6516, 2, 4, '13:30', '14:45');
-INSERT or IGNORE INTO 수업 VALUES
-	("CP06", "컴파일러", "P06", 6202, 1, 3, '09:00', '10:15');
-INSERT or IGNORE INTO 수업 VALUES
-	("CP07", "데이터베이스", "P07", 6202, 1, 3, '16:30', '14:45');
-INSERT or IGNORE INTO 수업 VALUES
-	("CP08", "컴퓨터네트워크", "P08", 6515, 2, 4, '09:00', '10:15');
-INSERT or IGNORE INTO 수업 VALUES
-	("CP09", "소프트웨어공학", "P09", 6515,  2, 4, '10:30', '11:45');
-INSERT or IGNORE INTO 수업 VALUES
-	("CP10", "데이터마이닝", "P10", 6515, 2, 4, '13:30', '14:45');
+INSERT IGNORE INTO 수업 VALUES
+	('CP01', '임베디드시스템', 'P01', 6514, 1, 3, '15:00', '16:15');
+INSERT IGNORE INTO 수업 VALUES
+	('CP02', 'AI프로그래밍', 'P02', 6409, 2, 4, '15:00', '16:15');
+INSERT IGNORE INTO 수업 VALUES
+	('CP03', '자료구조', 'P03', 6515, 1, 3, '10:30', '11:45');
+INSERT IGNORE INTO 수업 VALUES
+	('CP04', '네트워크보안', 'P04', 6203, 1, 3, '09:00', '10:15');
+INSERT IGNORE INTO 수업 VALUES
+	('CP05', '인공지능', 'P05', 6516, 2, 4, '13:30', '14:45');
+INSERT IGNORE INTO 수업 VALUES
+	('CP06', '컴파일러', 'P06', 6202, 1, 3, '09:00', '10:15');
+INSERT IGNORE INTO 수업 VALUES
+	('CP07', '데이터베이스', 'P07', 6202, 1, 3, '16:30', '14:45');
+INSERT IGNORE INTO 수업 VALUES
+	('CP08', '컴퓨터네트워크', 'P08', 6515, 2, 4, '09:00', '10:15');
+INSERT IGNORE INTO 수업 VALUES
+	('CP09', '소프트웨어공학', 'P09', 6515,  2, 4, '10:30', '11:45');
+INSERT IGNORE INTO 수업 VALUES
+	('CP10', '데이터마이닝', 'P10', 6515, 2, 4, '13:30', '14:45');
 
 
 
@@ -73,7 +68,7 @@ SELECT name, pname, croom, cday1, cday2, startTime, endTime
 FROM 수업 classes
 INNER JOIN 교수 profs
 	ON classes.pid = profs.id
-WHERE cday1 = strftime('%w', 'now', 'localtime') or cday2 = strftime('%w', 'now', 'localtime')
+WHERE cday1 = DATE_FORMAT(NOW(), '%w') or cday2 = DATE_FORMAT(NOW(), '%w')
 ORDER BY startTime ASC
 
 
@@ -83,7 +78,7 @@ SELECT name, croom, cday1, cday2, startTime, endTime
 FROM 수업 classes
 INNER JOIN 교수 profs
 	ON classes.pid = profs.id
-WHERE profs.pname = "우균"
+WHERE profs.pname = 'ㅁㅁㅁ'
 ORDER BY cday1 ASC, startTime ASC
 
 
@@ -94,7 +89,7 @@ SELECT name, pname, croom, cday1, cday2, startTime, endTime
 FROM 수업 classes
 INNER JOIN 교수 profs
 	ON classes.pid = profs.id
-WHERE (cday1 = strftime('%w', 'now', 'localtime') or cday2 = strftime('%w', 'now', 'localtime')) AND (strftime('%H:%M', 'now', 'localtime') > startTime AND strftime('%H:%M', 'now', 'localtime') < endTime)
+WHERE (cday1 = DATE_FORMAT(NOW(), '%w') or cday2 = DATE_FORMAT(NOW(), '%w')) AND (DATE_FORMAT(NOW(), '%H:%I') > startTime AND DATE_FORMAT(NOW(), '%H:%I') < endTime)
 ORDER BY cday1 ASC, startTime ASC
 
 
@@ -105,6 +100,6 @@ SELECT pname, croom, startTime, endTime
 FROM 수업 classes
 INNER JOIN 교수 profs
 	ON classes.pid = profs.id
-WHERe name = "ㅇㅇㅇ"
+WHERe name = 'ㅇㅇㅇ'
 ORDER BY cday1 ASC, startTime ASC
 
