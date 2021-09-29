@@ -53,6 +53,7 @@ let chatLog = new chatDB.Database('..\public\db\chatlog.db',
 //초기 테이블 생성 및 데이터 업로드(최초 1회만 실행됨)
 function chatLogDB_Init()
 {
+  chatLog.run("DROP TABLE chatR1");
   var qry1, qry2, qry3;
   //채팅방 대화 기록 용 테이블 생성
   qry1 = 'CREATE TABLE IF NOT EXISTS chatR';
@@ -65,6 +66,8 @@ function chatLogDB_Init()
   console.log('채팅방 2번용 로그 DB 테이블 생성 완료');
   chatLog.run(qry1 + '3' + qry2 + qry3);
   console.log('채팅방 3번용 로그 DB 테이블 생성 완료');
+
+  
 }
 
 //채팅 로그 불러오기 기능 (현재 콘솔로만 가능)
@@ -219,6 +222,13 @@ io.on('connection', (socket) => {
       socket.to('room' + nxt).emit('users', roomUserList(nxt));
       socket.to('room' + nxt).emit('enter chat', id);
     }
+  }
+
+  function getQueries(msg)
+  {
+    var proto = msg.split(" ");
+    var length = proto.length;
+    
   }
 
 });

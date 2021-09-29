@@ -104,13 +104,16 @@ socket.on
     'chat message', 
     function(message, name)
     {
+        
         if (usrName == "guest" && name == "CSR"){
-            startTalk();
             tts(message, {lang:"ko-kr", rate:1, pitch:1});
-            setTimeout(() =>50000);
-            stopTalk();
+            charInstance.SendMessage("CCavatar", "changeAnimation", 0);
         }
         chatLog.appendChild(msgLogging(message, false));
+
+        setTimeout(function () {
+            charInstance.SendMessage("CCavatar", "changeAnimation", 1);
+          }, 5000);
     }
 );
 
