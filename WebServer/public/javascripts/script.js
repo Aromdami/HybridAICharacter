@@ -43,7 +43,6 @@ document.body.appendChild(mainScript);
 
 createUnityInstance(document.querySelector("#unity-canvas"), unitySetup);
 
-
 function changeAnimation(command)
 {
     charInstance.SendMessage("CCavatar", "changeAnimation", command);
@@ -102,12 +101,13 @@ socket.on
     {
         
         if (usrName == "guest" && name == "CSR"){
-            tts(message, {lang:"ko-kr", rate:1, pitch:1});
             changeAnimation(1);
+            tts(message, {lang:"ko-kr", rate:1, pitch:1});
+           
         }
         chatLog.appendChild(msgLogging(message, false));
-        var waitTime = message.length / 10 * 1000;
-        
+        var waitTime = message.length / 6 * 1000;
+
         setTimeout(function () {
             changeAnimation(0);
           }, waitTime);
