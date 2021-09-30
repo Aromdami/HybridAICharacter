@@ -21,33 +21,6 @@ app.use(express.static('public'))
 //채팅 내역 복구, 저장
 const chatDB = require('sqlite3').verbose();
 
-//AI 활용용도의 mySQL
-const aiDB = require('mysql');
-
-var msqlDB = aiDB.createConnection(
-  {
-    host: 'localhost',
-    user: 'root',
-    password: 'coffeedawn',
-    database: 'test_DB'
-  }
-);
-
-msqlDB.connect();
-
-msqlDB.query('SELECT DATE_FORMAT(NOW(), \'%H:%I:%s\') as solution',
-  function (error, results, fields)
-  {
-    if(error) throw error;
-
-    console.log("현재 DB 기준 시각" + results[0].solution + "입니다.");
-    console.log(results);
-  }
-);
-
-msqlDB.end();
-
-
 let chatLog = new chatDB.Database('..\public\db\chatlog.db', 
   (err) =>{
     if (err)
