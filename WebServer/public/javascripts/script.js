@@ -45,11 +45,11 @@ createUnityInstance(document.querySelector("#unity-canvas"), unitySetup);
 
 function stopTalk()
 {
-    charInstance.SendMessage("CCavatar", "changeAnimation", 1);
+    charInstance.SendMessage("CCavatar", "changeAnimation" , 0);
 }
 function startTalk()
 {
-    charInstance.SendMessage("CCavatar", "changeAnimation", 0);
+    charInstance.SendMessage("CCavatar", "changeAnimation", 1);
 }
 
 
@@ -107,12 +107,12 @@ socket.on
         
         if (usrName == "guest" && name == "CSR"){
             tts(message, {lang:"ko-kr", rate:1, pitch:1});
-            charInstance.SendMessage("CCavatar", "changeAnimation", 0);
+            startTalk();
         }
         chatLog.appendChild(msgLogging(message, false));
 
         setTimeout(function () {
-            charInstance.SendMessage("CCavatar", "changeAnimation", 1);
+            stopTalk();
           }, 5000);
     }
 );
