@@ -43,15 +43,11 @@ document.body.appendChild(mainScript);
 
 createUnityInstance(document.querySelector("#unity-canvas"), unitySetup);
 
-function stopTalk()
-{
-    charInstance.SendMessage("CCavatar", "changeAnimation" , 0);
-}
-function startTalk()
-{
-    charInstance.SendMessage("CCavatar", "changeAnimation", 1);
-}
 
+function changeAnimation(command)
+{
+    charInstance.SendMessage("CCavatar", "changeAnimation", command);
+}
 
 /*==============================================*/
 /*================ Chat Service =================*/
@@ -107,13 +103,14 @@ socket.on
         
         if (usrName == "guest" && name == "CSR"){
             tts(message, {lang:"ko-kr", rate:1, pitch:1});
-            startTalk();
+            changeAnimation(1);
         }
         chatLog.appendChild(msgLogging(message, false));
-
+        var waitTime = message.length / 10 * 1000;
+        
         setTimeout(function () {
-            stopTalk();
-          }, 5000);
+            changeAnimation(0);
+          }, waitTime);
     }
 );
 

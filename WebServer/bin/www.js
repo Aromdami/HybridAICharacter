@@ -7,9 +7,16 @@ var port = 3000;
 var server = http.createServer(app);
 
 var liveUsers = {};   
+var rooms = [0,0,0,0];
 
 
 app.use(express.static('public'))
+
+
+
+/*============================================*/
+/*================ DB SET UP =================*/
+/*============================================*/
 
 //채팅 내역 복구, 저장
 const chatDB = require('sqlite3').verbose();
@@ -21,7 +28,7 @@ var msqlDB = aiDB.createConnection(
   {
     host: 'localhost',
     user: 'root',
-    password: '12345',
+    password: 'coffeedawn',
     database: 'test_DB'
   }
 );
@@ -67,10 +74,9 @@ function chatLogDB_Init()
   chatLog.run(qry1 + '3' + qry2 + qry3);
   console.log('채팅방 3번용 로그 DB 테이블 생성 완료');
 
-  
 }
 
-//채팅 로그 불러오기 기능 (현재 콘솔로만 가능)
+//채팅 로그 불러오기 기능 (콘솔 테스트용)
 function loadChatLog(roomNo)
 {
   var qry1, qry2;
@@ -92,7 +98,6 @@ function loadChatLog(roomNo)
 
 }
 
-
 /*============================================*/
 /*================ Socket IO =================*/
 /*============================================*/
@@ -109,8 +114,10 @@ io.on('connection', (socket) => {
     liveUsers[id] = {room: 1, socketID: socket.id, name:id};
     socket.join('room1');
     updateUser(0, 1, id);
-
+    rooms[0] += 1;
     console.log('사용자 로그인 확인 (아이디: ' + id + ') (번호: ' + socket.id + ')');
+
+    console.log('현재인원:' + rooms[0])
   });
 
   //채팅 전송
@@ -127,6 +134,27 @@ io.on('connection', (socket) => {
     console.log("NEW QRY IS " + qry1 + qry2 + qry3);
     chatLog.run(qry1 + qry2 + qry3);
     socket.to('room' + room).emit('chat message', message, name);
+
+    //손님 채팅을 인식
+    if (name == "guest" && rooms[room - 1] == 1)
+    {
+      const spawn = require('child_process').spawn
+      const botAnswer =spawn('python', ['public/chatbot/test/testingBot.py', message]);
+
+      botAnswer.stdout.on('data', 
+        function(data) 
+        { 
+          console.log(data.toString('utf-8'))
+          var answer = data.toString('utf8');
+          var qry_ans = answer;
+          if (qry_ans == "잠시만 기다려주세요" || qry_ans == "죄송해요 무슨 말인지 모르겠어요. 조금 더 공부 할게요.")
+            qry_ans = "[AI가 대답을 못한 질문]"
+          qry2 = " VALUES (\"CSR\", \"" + qry_ans + "\"";
+          chatLog.run(qry1 + qry2 + qry3);
+          console.log("NEW QRY IS " + qry1 + qry2 + qry3);
+          io.to(socket.id).emit('chat message', answer, "CSR");
+      });
+    }
   });
 
   
@@ -139,7 +167,8 @@ io.on('connection', (socket) => {
     let nxt = info.room;
     socket.leave('room' + prv);
     socket.join('room' + nxt);
-    
+    rooms[prv - 1] -=1;
+    rooms[nxt - 1] +=1;
 
     liveUsers[usrname].room = info.room;     
     updateUser(prv, nxt, socket.id);
@@ -180,6 +209,7 @@ io.on('connection', (socket) => {
 
     let id = getUsrNameSID(socket.id);
     let room = liveUsers[id].room;
+    rooms[liveUsers[id].room -1] -=1;
     delete liveUsers[id];
     
     updateUser(room, 0, id);
