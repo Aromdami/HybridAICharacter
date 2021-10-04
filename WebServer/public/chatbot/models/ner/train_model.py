@@ -33,7 +33,7 @@ for t in corpus:
     tagged_sentence = []
     sentence, bio_tag = [], []
     for w in t:
-        tagged_sentence.append((w[1], w[3]))
+        tagged_sentence.append((w[1], w[3]))    # 여기서 오류 수정
         sentence.append(w[1])
         bio_tag.append(w[3])
     

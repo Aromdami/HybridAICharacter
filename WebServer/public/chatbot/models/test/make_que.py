@@ -1,7 +1,7 @@
 import csv
 
 word_file = 'keyword.csv'
-sent_file = '주문조합.csv'
+sent_file = '질문조합.csv'
 
 with open(word_file, mode='r', encoding='utf-8-sig') as f:
     reader = csv.reader(f)

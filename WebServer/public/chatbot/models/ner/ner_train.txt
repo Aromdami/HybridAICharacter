@@ -1,306 +1,345 @@
 ; 임베디드시스템 수업 언제 시작해?
-$<임베디드시스템:SUBJ> 수업 언제 시작해
+$<임베디드시스템:SUBJ> 수업 <언제:TIME> 시작 해 ?
 1	임베디드시스템	NNG	B_SUBJ
 2	수업	NNP	O
 3	언제	NNG	B_TIME
 4	시작	NNP	O
 5	해	VV	O
+6	?	SF	O
 
 ; 임베디드시스템 오늘 수업해?
-$<임베디드시스템:SUBJ> 오늘 수업해
+$<임베디드시스템:SUBJ> <오늘:TIME> 수업 해 ?
 1	임베디드시스템	NNG	B_SUBJ
 2	오늘	NNG	B_TIME
 3	수업	NNP	O
 4	해	VV	O
+5	?	SF	O
 
 ; 임베디드시스템 내일 수업해?
-$<임베디드시스템:SUBJ> 내일 수업해
+$<임베디드시스템:SUBJ> <내일:TIME> 수업 해 ?
 1	임베디드시스템	NNG	B_SUBJ
 2	내일	NNG	B_TIME
 3	수업	NNP	O
 4	해	VV	O
+5	?	SF	O
 
 ; 임베디드시스템 수업 지금 있어?
-$<임베디드시스템:SUBJ> 수업 지금 있어
+$<임베디드시스템:SUBJ> 수업 <지금:TIME> 있 어 ?
 1	임베디드시스템	NNG	B_SUBJ
 2	수업	NNP	O
 3	지금	NNG	B_TIME
 4	있	VV	O
 5	어	EF	O
+6	?	SF	O
 
 ; AI프로그래밍 수업 언제 시작해?
-$<AI프로그래밍:SUBJ> 수업 언제 시작해
+$<AI프로그래밍:SUBJ> 수업 <언제:TIME> 시작 해 ?
 1	AI프로그래밍	NNG	B_SUBJ
 2	수업	NNP	O
 3	언제	NNG	B_TIME
 4	시작	NNP	O
 5	해	VV	O
+6	?	SF	O
 
 ; AI프로그래밍 오늘 수업해?
-$<AI프로그래밍:SUBJ> 오늘 수업해
+$<AI프로그래밍:SUBJ> <오늘:TIME> 수업 해 ?
 1	AI프로그래밍	NNG	B_SUBJ
 2	오늘	NNG	B_TIME
 3	수업	NNP	O
 4	해	VV	O
+5	?	SF	O
 
 ; AI프로그래밍 내일 수업해?
-$<AI프로그래밍:SUBJ> 내일 수업해
+$<AI프로그래밍:SUBJ> <내일:TIME> 수업 해 ?
 1	AI프로그래밍	NNG	B_SUBJ
 2	내일	NNG	B_TIME
 3	수업	NNP	O
 4	해	VV	O
+5	?	SF	O
 
 ; AI프로그래밍 수업 지금 있어?
-$<AI프로그래밍:SUBJ> 수업 지금 있어
+$<AI프로그래밍:SUBJ> 수업 <지금:TIME> 있 어 ?
 1	AI프로그래밍	NNG	B_SUBJ
 2	수업	NNP	O
 3	지금	NNG	B_TIME
 4	있	VV	O
 5	어	EF	O
+6	?	SF	O
 
 ; 자료구조 수업 언제 시작해?
-$<자료구조:SUBJ> 수업 언제 시작해
+$<자료구조:SUBJ> 수업 <언제:TIME> 시작 해 ?
 1	자료구조	NNG	B_SUBJ
 2	수업	NNP	O
 3	언제	NNG	B_TIME
 4	시작	NNP	O
 5	해	VV	O
+6	?	SF	O
 
 ; 자료구조 오늘 수업해?
-$<자료구조:SUBJ> 오늘 수업해
+$<자료구조:SUBJ> <오늘:TIME> 수업 해 ?
 1	자료구조	NNG	B_SUBJ
 2	오늘	NNG	B_TIME
 3	수업	NNP	O
 4	해	VV	O
+5	?	SF	O
 
 ; 자료구조 내일 수업해?
-$<자료구조:SUBJ> 내일 수업해
+$<자료구조:SUBJ> <내일:TIME> 수업 해 ?
 1	자료구조	NNG	B_SUBJ
 2	내일	NNG	B_TIME
 3	수업	NNP	O
 4	해	VV	O
+5	?	SF	O
 
 ; 자료구조 수업 지금 있어?
-$<자료구조:SUBJ> 수업 지금 있어
+$<자료구조:SUBJ> 수업 <지금:TIME> 있 어 ?
 1	자료구조	NNG	B_SUBJ
 2	수업	NNP	O
 3	지금	NNG	B_TIME
 4	있	VV	O
 5	어	EF	O
+6	?	SF	O
 
 ; 네트워크보안 수업 언제 시작해?
-$<네트워크보안:SUBJ> 수업 언제 시작해
+$<네트워크보안:SUBJ> 수업 <언제:TIME> 시작 해 ?
 1	네트워크보안	NNG	B_SUBJ
 2	수업	NNP	O
 3	언제	NNG	B_TIME
 4	시작	NNP	O
 5	해	VV	O
+6	?	SF	O
 
 ; 네트워크보안 오늘 수업해?
-$<네트워크보안:SUBJ> 오늘 수업해
+$<네트워크보안:SUBJ> <오늘:TIME> 수업해 ?
 1	네트워크보안	NNG	B_SUBJ
 2	오늘	NNG	B_TIME
 3	수업	NNP	O
 4	해	VV	O
+5	?	SF	O
 
 ; 네트워크보안 내일 수업해?
-$<네트워크보안:SUBJ> 내일 수업해
+$<네트워크보안:SUBJ> <내일:TIME> 수업 해 ?
 1	네트워크보안	NNG	B_SUBJ
 2	내일	NNG	B_TIME
 3	수업	NNP	O
 4	해	VV	O
+5	?	SF	O
 
 ; 네트워크보안 수업 지금 있어?
-$<네트워크보안:SUBJ> 수업 지금 있어
+$<네트워크보안:SUBJ> 수업 <지금:TIME> 있 어 ?
 1	네트워크보안	NNG	B_SUBJ
 2	수업	NNP	O
 3	지금	NNG	B_TIME
 4	있	VV	O
 5	어	EF	O
+6	?	SF	O
 
 ; 인공지능 수업 언제 시작해?
-$<인공지능:SUBJ> 수업 언제 시작해
-
+$<인공지능:SUBJ> 수업 <언제:TIME> 시작 해 ?
 1	인공지능	NNG	B_SUBJ
 2	수업	NNP	O
 3	언제	NNG	B_TIME
 4	시작	NNP	O
 5	해	VV	O
+6	?	SF	O
 
 ; 인공지능 오늘 수업해?
-$<인공지능:SUBJ> 오늘 수업해
+$<인공지능:SUBJ> <오늘:TIME> 수업 해 ?
 1	인공지능	NNG	B_SUBJ
 2	오늘	NNG	B_TIME
 3	수업	NNP	O
 4	해	VV	O
+5	?	SF	O
 
 ; 인공지능 내일 수업해?
-$<인공지능:SUBJ> 내일 수업해
+$<인공지능:SUBJ> <내일:TIME> 수업 해 ?
 1	인공지능	NNG	B_SUBJ
 2	내일	NNG	B_TIME
 3	수업	NNP	O
 4	해	VV	O
+5	?	SF	O
 
 ; 인공지능 수업 지금 있어?
-$<인공지능:SUBJ> 수업 지금 있어
+$<인공지능:SUBJ> 수업 <지금:TIME> 있 어 ?
 1	네트워크보안	NNG	B_SUBJ
 2	수업	NNP	O
 3	지금	NNG	B_TIME
 4	있	VV	O
 5	어	EF	O
+6	?	SF	O
 
 ; 컴파일러 수업 언제 시작해?
-$<컴파일러:SUBJ> 수업 언제 시작해
+$<컴파일러:SUBJ> 수업 <언제:TIME> 시작 해 ?
 1	컴파일러	NNG	B_SUBJ
 2	수업	NNP	O
 3	언제	NNG	B_TIME
 4	시작	NNP	O
 5	해	VV	O
+6	?	SF	O
 
 ; 컴파일러 오늘 수업해?
-$<컴파일러:SUBJ> 오늘 수업해
+$<컴파일러:SUBJ> <오늘:TIME> 수업 해 ?
 1	컴파일러	NNG	B_SUBJ
 2	오늘	NNG	B_TIME
 3	수업	NNP	O
 4	해	VV	O
+5	?	SF	O
 
 ; 컴파일러 내일 수업해?
-$<컴파일러:SUBJ> 내일 수업해
+$<컴파일러:SUBJ> <내일:TIME> 수업 해 ?
 1	컴파일러	NNG	B_SUBJ
 2	내일	NNG	B_TIME
 3	수업	NNP	O
 4	해	VV	O
+5	?	SF	O
 
 ; 컴파일러 수업 지금 있어?
-$<컴파일러:SUBJ> 수업 지금 있어
+$<컴파일러:SUBJ> 수업 <지금:TIME> 있 어 ?
 1	컴파일러	NNG	B_SUBJ
 2	수업	NNP	O
 3	지금	NNG	B_TIME
 4	있	VV	O
 5	어	EF	O
+6	?	SF	O
 
 ; 데이터베이스 수업 언제 시작해?
-$<데이터베이스:SUBJ> 수업 언제 시작해
+$<데이터베이스:SUBJ> 수업 <언제:TIME> 시작 해 ? 
 1	데이터베이스	NNG	B_SUBJ
 2	수업	NNP	O
 3	언제	NNG	B_TIME
 4	시작	NNP	O
 5	해	VV	O
+6	?	SF	O
 
 ; 데이터베이스 오늘 수업해?
-$<데이터베이스:SUBJ> 오늘 수업해
+$<데이터베이스:SUBJ> <오늘:TIME> 수업 해 ?
 1	데이터베이스	NNG	B_SUBJ
 2	오늘	NNG	B_TIME
 3	수업	NNP	O
 4	해	VV	O
+5	?	SF	O
 
 ; 데이터베이스 내일 수업해?
-$<데이터베이스:SUBJ> 내일 수업해
+$<데이터베이스:SUBJ> <내일:TIME> 수업 해 ?
 1	데이터베이스	NNG	B_SUBJ
 2	내일	NNG	B_TIME
 3	수업	NNP	O
 4	해	VV	O
+5	?	SF	O
 
 ; 데이터베이스 수업 지금 있어?
-$<데이터베이스:SUBJ> 수업 지금 있어
+$<데이터베이스:SUBJ> 수업 <지금:TIME> 있 어 ?
 1	데이터베이스	NNG	B_SUBJ
 2	수업	NNP	O
 3	지금	NNG	B_TIME
 4	있	VV	O
 5	어	EF	O
+6	?	SF	O
 
-; 컴퓨터네트워크 수업 언제 시작해?
-$<컴퓨터네트워크:SUBJ> 수업 언제 시작해?
+; 컴퓨터네트워크 수업 언제 시작해 ?
+$<컴퓨터네트워크:SUBJ> 수업 <언제:TIME> 시작 해?
 1	컴퓨터네트워크	NNG	B_SUBJ
 2	수업	NNP	O
 3	언제	NNG	B_TIME
 4	시작	NNP	O
 5	해	VV	O
+6	?	SF	O
 
 ; 컴퓨터네트워크 오늘 수업해?
-$<컴퓨터네트워크:SUBJ> 오늘 수업해
+$<컴퓨터네트워크:SUBJ> <오늘:TIME> 수업해 ?
 1	컴퓨터네트워크	NNG	B_SUBJ
 2	오늘	NNG	B_TIME
 3	수업	NNP	O
 4	해	VV	O
+5	?	SF	O
 
 ; 컴퓨터네트워크 내일 수업해?
-$<컴퓨터네트워크:SUBJ> 내일 수업해
+$<컴퓨터네트워크:SUBJ> <내일:TIME> 수업 해 ?
 1	컴퓨터네트워크	NNG	B_SUBJ
 2	내일	NNG	B_TIME
 3	수업	NNP	O
 4	해	VV	O
+5	?	SF	O
 
 ; 컴퓨터네트워크 수업 지금 있어?
-$<컴퓨터네트워크:SUBJ> 수업 지금 있어
+$<컴퓨터네트워크:SUBJ> 수업 <지금:TIME> 있 어 ?
 1	컴퓨터네트워크	NNG	B_SUBJ
 2	수업	NNP	O
 3	지금	NNG	B_TIME
 4	있	VV	O
 5	어	EF	O
+6	?	SF	O
 
 ; 소프트웨어공학 수업 언제 시작해?
-$<소프트웨어공학:SUBJ> 수업 언제 시작해
+$<소프트웨어공학:SUBJ> 수업 <언제:TIME> 시작 해 ?
 1	소프트웨어공학	NNG	B_SUBJ
 2	수업	NNP	O
 3	언제	NNG	B_TIME
 4	시작	NNP	O
 5	해	VV	O
+6	?	SF	O
 
 ; 소프트웨어공학 오늘 수업해?
-$<소프트웨어공학:SUBJ> 오늘 수업해
+$<소프트웨어공학:SUBJ> <오늘:TIME> 수업 해 ?
 1	소프트웨어공학	NNG	B_SUBJ
 2	오늘	NNG	B_TIME
 3	수업	NNP	O
 4	해	VV	O
+5	?	SF	O
 
 ; 소프트웨어공학 내일 수업해?
-$<소프트웨어공학:SUBJ> 내일 수업해
+$<소프트웨어공학:SUBJ> <내일:TIME> 수업 해 ?
 1	소프트웨어공학	NNG	B_SUBJ
 2	내일	NNG	B_TIME
 3	수업	NNP	O
 4	해	VV	O
+5	?	SF	O
 
 ; 소프트웨어공학 수업 지금 있어?
-$<소프트웨어공학:SUBJ> 수업 지금 있어
+$<소프트웨어공학:SUBJ> 수업 <지금:TIME> 있어 ?
 1	소프트웨어공학	NNG	B_SUBJ
 2	수업	NNP	O
 3	지금	NNG	B_TIME
 4	있	VV	O
 5	어	EF	O
+6	?	SF	O
 
 ; 데이터마이닝 수업 언제 시작해?
-$데이터마이닝 수업 언제 시작해
+$<데이터마이닝:SUBJ> 수업 <언제:TIME> 시작 해 ?
 1	데이터마이닝	NNG	B_SUBJ
 2	수업	NNP	O
 3	언제	NNG	B_TIME
 4	시작	NNP	O
 5	해	VV	O
+6	?	SF	O
 
 ; 데이터마이닝 오늘 수업해?
-$데이터마이닝 오늘 수업해
+$<데이터마이닝:SUBJ> <오늘:TIME> 수업해 ?
 1	소프트웨어공학	NNG	B_SUBJ
 2	오늘	NNG	B_TIME
 3	수업	NNP	O
 4	해	VV	O
+5	?	SF	O
 
 ; 데이터마이닝 내일 수업해?
-$데이터마이닝 내일 수업해
+$<데이터마이닝:SUBJ> <내일:TIME> 수업 해 ?
 1	데이터마이닝	NNG	B_SUBJ
 2	내일	NNG	B_TIME
 3	수업	NNP	O
 4	해	VV	O
+5	?	SF	O
 
 ; 데이터마이닝 수업 지금 있어?
-$데이터마이닝 수업 지금 있어
+$<데이터마이닝:SUBJ> 수업 <지금:TIME> 있 어 ?
 1	데이터마이닝	NNG	B_SUBJ
 2	수업	NNP	O
 3	지금	NNG	B_TIME
 4	있	VV	O
 5	어	EF	O
+6	?	SF	O
 
-;정상화 교수님 지금 수업하셔?
-$<정상화:PROF> 교수님 지금 수업 하 시 어
+; 정상화 교수님 지금 수업하셔?
+$<정상화:PROF> 교수님 <지금:TIME> 수업 하 시 어 ?
 1	정상화	NNG	B_SUBJ
 2	교수님	NNP	O
 3	지금	NNG	B_TIME
@@ -308,9 +347,10 @@ $<정상화:PROF> 교수님 지금 수업 하 시 어
 5	하	VV	O
 6	시	EP	O
 7	어	EF	O
+8	?	SF	O
 
-;정상화 교수님 오늘 수업하셔?
-$<정상화:PROF> 교수님 오늘 수업 하 시 어
+; 정상화 교수님 오늘 수업하셔?
+$<정상화:PROF> 교수님 <오늘:TIME> 수업 하 시 어 ?
 1	정상화	NNG	B_SUBJ
 2	교수님	NNP	O
 3	오늘	NNG	B_TIME
@@ -318,9 +358,10 @@ $<정상화:PROF> 교수님 오늘 수업 하 시 어
 5	하	VV	O
 6	시	EP	O
 7	어	EF	O
+8	?	SF	O
 
-;정상화 교수님 내일 수업하셔?
-$<정상화:PROF> 교수님 내일 수업 하 시 어
+; 정상화 교수님 내일 수업하셔?
+$<정상화:PROF> 교수님 <내일:TIME> 수업 하 시 어 ?
 1	정상화	NNG	B_SUBJ
 2	교수님	NNP	O
 3	내일	NNG	B_TIME
@@ -328,9 +369,10 @@ $<정상화:PROF> 교수님 내일 수업 하 시 어
 5	하	VV	O
 6	시	EP	O
 7	어	EF	O
+8	?	SF	O
 
 ; 정상화 교수님 언제 수업하셔?
-$<정상화:PROF> 교수님 언제 수업 하 시 어
+$<정상화:PROF> 교수님 <언제:TIME> 수업 하 시 어 ?
 1	정상화	NNG	B_SUBJ
 2	교수님	NNP	O
 3	언제	NNG	B_TIME
@@ -338,9 +380,10 @@ $<정상화:PROF> 교수님 언제 수업 하 시 어
 5	하	VV	O
 6	시	EP	O
 7	어	EF	O
+8	?	SF	O
 
 ; 류광렬 교수님 지금 수업하셔?
-$<정상화:PROF> 교수님 오늘 수업 하 시 어
+$<정상화:PROF> 교수님 <지금:TIME> 수업 하 시 어 ?
 1	류광렬	NNG	B_SUBJ
 2	교수님	NNP	O
 3	지금	NNG	B_TIME
@@ -348,9 +391,10 @@ $<정상화:PROF> 교수님 오늘 수업 하 시 어
 5	하	VV	O
 6	시	EP	O
 7	어	EF	O
+8	?	SF	O
 
 ; 류광렬 교수님 오늘 수업하셔?
-$<류광렬:PROF> 교수님 오늘 수업 하 시 어
+$<류광렬:PROF> 교수님 <오늘:TIME> 수업 하 시 어 ?
 1	류광렬	NNG	B_SUBJ
 2	교수님	NNP	O
 3	오늘	NNG	B_TIME
@@ -358,9 +402,10 @@ $<류광렬:PROF> 교수님 오늘 수업 하 시 어
 5	하	VV	O
 6	시	EP	O
 7	어	EF	O
+8	?	SF	O
 
 ; 류광렬 교수님 내일 수업하셔?
-$<류광렬:PROF> 교수님 내일 수업 하 시 어
+$<류광렬:PROF> 교수님 <내일:TIME> 수업 하 시 어 ?
 1	류광렬	NNG	B_SUBJ
 2	교수님	NNP	O
 3	내일	NNG	B_TIME
@@ -368,9 +413,10 @@ $<류광렬:PROF> 교수님 내일 수업 하 시 어
 5	하	VV	O
 6	시	EP	O
 7	어	EF	O
+8	?	SF	O
 
 ; 류광렬 교수님 언제 수업하셔?
-$<류광렬:PROF> 교수님 언제 수업 하 시 어
+$<류광렬:PROF> 교수님 <언제:TIME> 수업 하 시 어 ?
 1	류광렬	NNG	B_SUBJ
 2	교수님	NNP	O
 3	언제	NNG	B_TIME
@@ -378,9 +424,10 @@ $<류광렬:PROF> 교수님 언제 수업 하 시 어
 5	하	VV	O
 6	시	EP	O
 7	어	EF	O
+8	?	SF	O
 
 ; 홍봉희 교수님 지금 수업하셔?
-$<홍봉희:PROF> 교수님 지금 수업 하 시 어
+$<홍봉희:PROF> 교수님 <지금:TIME> 수업 하 시 어 ?
 1	홍봉희	NNG	B_SUBJ
 2	교수님	NNP	O
 3	지금	NNG	B_TIME
@@ -388,9 +435,10 @@ $<홍봉희:PROF> 교수님 지금 수업 하 시 어
 5	하	VV	O
 6	시	EP	O
 7	어	EF	O
+8	?	SF	O
 
 ; 홍봉희 교수님 오늘 수업하셔?
-$<홍봉희:PROF> 교수님 오늘 수업 하 시 어
+$<홍봉희:PROF> 교수님 <오늘:TIME> 수업 하 시 어 ?
 1	홍봉희	NNG	B_SUBJ
 2	교수님	NNP	O
 3	오늘	NNG	B_TIME
@@ -398,9 +446,10 @@ $<홍봉희:PROF> 교수님 오늘 수업 하 시 어
 5	하	VV	O
 6	시	EP	O
 7	어	EF	O
+8	?	SF	O
 
 ; 홍봉희 교수님 내일 수업하셔?
-$<홍봉희:PROF> 교수님 내일 수업 하 시 어
+$<홍봉희:PROF> 교수님 <내일:TIME> 수업 하 시 어 ?
 1	홍봉희	NNG	B_SUBJ
 2	교수님	NNP	O
 3	내일	NNG	B_TIME
@@ -408,9 +457,10 @@ $<홍봉희:PROF> 교수님 내일 수업 하 시 어
 5	하	VV	O
 6	시	EP	O
 7	어	EF	O
+8	?	SF	O
 
 ; 홍봉희 교수님 언제 수업하셔?
-$<홍봉희:PROF> 교수님 언제 수업 하 시 어
+$<홍봉희:PROF> 교수님 <언제:TIME> 수업 하 시 어 ?
 1	홍봉희	NNG	B_SUBJ
 2	교수님	NNP	O
 3	언제	NNG	B_TIME
@@ -418,9 +468,10 @@ $<홍봉희:PROF> 교수님 언제 수업 하 시 어
 5	하	VV	O
 6	시	EP	O
 7	어	EF	O
+8	?	SF	O
 
 ; 최윤호 교수님 지금 수업하셔?
-$<최윤호:PROF> 교수님 지금 수업 하 시 어
+$<최윤호:PROF> 교수님 <지금:TIME> 수업 하 시 어 ?
 1	최윤호	NNG	B_SUBJ
 2	교수님	NNP	O
 3	지금	NNG	B_TIME
@@ -428,9 +479,10 @@ $<최윤호:PROF> 교수님 지금 수업 하 시 어
 5	하	VV	O
 6	시	EP	O
 7	어	EF	O
+8	?	SF	O
 
 ; 최윤호 교수님 오늘 수업하셔?
-$<최윤호:PROF> 교수님 오늘 수업 하 시 어
+$<최윤호:PROF> 교수님 <오늘:TIME> 수업 하 시 어 ?
 1	최윤호	NNG	B_SUBJ
 2	교수님	NNP	O
 3	오늘	NNG	B_TIME
@@ -438,9 +490,10 @@ $<최윤호:PROF> 교수님 오늘 수업 하 시 어
 5	하	VV	O
 6	시	EP	O
 7	어	EF	O
+8	?	SF	O
 
 ; 최윤호 교수님 내일 수업하셔?
-$<최윤호:PROF> 교수님 오늘 수업 하 시 어
+$<최윤호:PROF> 교수님 <오늘:TIME> 수업 하 시 어 ?
 1	최윤호	NNG	B_SUBJ
 2	교수님	NNP	O
 3	내일	NNG	B_TIME
@@ -448,9 +501,10 @@ $<최윤호:PROF> 교수님 오늘 수업 하 시 어
 5	하	VV	O
 6	시	EP	O
 7	어	EF	O
+8	?	SF	O
 
 ; 최윤호 교수님 언제 수업하셔?
-$<최윤호:PROF> 교수님 언제 수업 하 시 어
+$<최윤호:PROF> 교수님 <언제:TIME> 수업 하 시 어 ?
 1	최윤호	NNG	B_SUBJ
 2	교수님	NNP	O
 3	언제	NNG	B_TIME
@@ -458,9 +512,10 @@ $<최윤호:PROF> 교수님 언제 수업 하 시 어
 5	하	VV	O
 6	시	EP	O
 7	어	EF	O
+8	?	SF	O
 
 ; 감진규 교수님 지금 수업하셔?
-$<감진규:PROF> 교수님 지금 수업 하 시 어
+$<감진규:PROF> 교수님 <지금:TIME> 수업 하 시 어 ?
 1	감진규	NNG	B_SUBJ
 2	교수님	NNP	O
 3	지금	NNG	B_TIME
@@ -468,9 +523,10 @@ $<감진규:PROF> 교수님 지금 수업 하 시 어
 5	하	VV	O
 6	시	EP	O
 7	어	EF	O
+8	?	SF	O
 
 ; 감진규 교수님 오늘 수업하셔?
-$<감진규:PROF> 교수님 오늘 수업 하 시 어
+$<감진규:PROF> 교수님 <오늘:TIME> 수업 하 시 어 ?
 1	감진규	NNG	B_SUBJ
 2	교수님	NNP	O
 3	오늘	NNG	B_TIME
@@ -478,9 +534,10 @@ $<감진규:PROF> 교수님 오늘 수업 하 시 어
 5	하	VV	O
 6	시	EP	O
 7	어	EF	O
+8	?	SF	O
 
 ; 감진규 교수님 내일 수업하셔?
-$<감진규:PROF> 교수님 내일 수업 하 시 어
+$<감진규:PROF> 교수님 <내일:TIME> 수업 하 시 어 ?
 1	감진규	NNG	B_SUBJ
 2	교수님	NNP	O
 3	내일	NNG	B_TIME
@@ -488,9 +545,10 @@ $<감진규:PROF> 교수님 내일 수업 하 시 어
 5	하	VV	O
 6	시	EP	O
 7	어	EF	O
+8	?	SF	O
 
 ; 감진규 교수님 언제 수업하셔?
-$<감진규:PROF> 교수님 언제 수업 하 시 어
+$<감진규:PROF> 교수님 <언제:TIME> 수업 하 시 어 ?
 1	감진규	NNG	B_SUBJ
 2	교수님	NNP	O
 3	언제	NNG	B_TIME
@@ -498,9 +556,10 @@ $<감진규:PROF> 교수님 언제 수업 하 시 어
 5	하	VV	O
 6	시	EP	O
 7	어	EF	O
+8	?	SF	O
 
 ; 우균 교수님 지금 수업하셔?
-$<우균:PROF> 교수님 지금 수업 하 시 어
+$<우균:PROF> 교수님 <지금:TIME> 수업 하 시 어 ?
 1	우균	NNG	B_SUBJ
 2	교수님	NNP	O
 3	지금	NNG	B_TIME
@@ -508,9 +567,10 @@ $<우균:PROF> 교수님 지금 수업 하 시 어
 5	하	VV	O
 6	시	EP	O
 7	어	EF	O
+8	?	SF	O
 
 ; 우균 교수님 오늘 수업하셔?
-$<우균:PROF> 교수님 오늘 수업 하 시 어
+$<우균:PROF> 교수님 <오늘:TIME> 수업 하 시 어 ?
 1	우균	NNG	B_SUBJ
 2	교수님	NNP	O
 3	오늘	NNG	B_TIME
@@ -518,9 +578,10 @@ $<우균:PROF> 교수님 오늘 수업 하 시 어
 5	하	VV	O
 6	시	EP	O
 7	어	EF	O
+8	?	SF	O
 
 ; 우균 교수님 내일 수업하셔?
-$<우균:PROF> 교수님 내일 수업 하 시 어
+$<우균:PROF> 교수님 <내일:TIME> 수업 하 시 어 ?
 1	우균	NNG	B_SUBJ
 2	교수님	NNP	O
 3	내일	NNG	B_TIME
@@ -528,9 +589,10 @@ $<우균:PROF> 교수님 내일 수업 하 시 어
 5	하	VV	O
 6	시	EP	O
 7	어	EF	O
+8	?	SF	O
 
 ; 우균 교수님 언제 수업하셔?
-$<우균:PROF> 교수님 언제 수업 하 시 어
+$<우균:PROF> 교수님 <언제:TIME> 수업 하 시 어 ?
 1	우균	NNG	B_SUBJ
 2	교수님	NNP	O
 3	언제	NNG	B_TIME
@@ -538,9 +600,10 @@ $<우균:PROF> 교수님 언제 수업 하 시 어
 5	하	VV	O
 6	시	EP	O
 7	어	EF	O
+8	?	SF	O
 
 ; 이기준 교수님 지금 수업하셔?
-$<이기준:PROF> 교수님 지금 수업 하 시 어
+$<이기준:PROF> 교수님 <지금:TIME> 수업 하 시 어 ?
 1	이기준	NNG	B_SUBJ
 2	교수님	NNP	O
 3	지금	NNG	B_TIME
@@ -548,9 +611,10 @@ $<이기준:PROF> 교수님 지금 수업 하 시 어
 5	하	VV	O
 6	시	EP	O
 7	어	EF	O
+8	?	SF	O
 
 ; 이기준 교수님 오늘 수업하셔?
-$<이기준:PROF> 교수님 지금 수업 하 시 어
+$<이기준:PROF> 교수님 <오늘:TIME> 수업 하 시 어 ?
 1	이기준	NNG	B_SUBJ
 2	교수님	NNP	O
 3	오늘	NNG	B_TIME
@@ -558,9 +622,10 @@ $<이기준:PROF> 교수님 지금 수업 하 시 어
 5	하	VV	O
 6	시	EP	O
 7	어	EF	O
+8	?	SF	O
 
 ; 이기준 교수님 내일 수업하셔?
-$<이기준:PROF> 교수님 내일 수업 하 시 어
+$<이기준:PROF> 교수님 <내일:TIME> 수업 하 시 어 ?
 1	이기준	NNG	B_SUBJ
 2	교수님	NNP	O
 3	내일	NNG	B_TIME
@@ -568,9 +633,10 @@ $<이기준:PROF> 교수님 내일 수업 하 시 어
 5	하	VV	O
 6	시	EP	O
 7	어	EF	O
+8	?	SF	O
 
 ; 이기준 교수님 언제 수업하셔?
-$<이기준:PROF> 교수님 언제 수업 하 시 어
+$<이기준:PROF> 교수님 <언제:TIME> 수업 하 시 어 ?
 1	우균	NNG	B_SUBJ
 2	교수님	NNP	O
 3	언제	NNG	B_TIME
@@ -578,9 +644,10 @@ $<이기준:PROF> 교수님 언제 수업 하 시 어
 5	하	VV	O
 6	시	EP	O
 7	어	EF	O
+8	?	SF	O
 
 ; 탁성우 교수님 지금 수업하셔?
-$<탁성우:PROF> 교수님 지금 수업 하 시 어
+$<탁성우:PROF> 교수님 <지금:TIME> 수업 하 시 어 ?
 1	이기준	NNG	B_SUBJ
 2	교수님	NNP	O
 3	지금	NNG	B_TIME
@@ -588,9 +655,10 @@ $<탁성우:PROF> 교수님 지금 수업 하 시 어
 5	하	VV	O
 6	시	EP	O
 7	어	EF	O
+8	?	SF	O
 
 ; 탁성우 교수님 오늘 수업하셔?
-$<탁성우:PROF> 교수님 오늘 수업 하 시 어
+$<탁성우:PROF> 교수님 <오늘:TIME> 수업 하 시 어 ?
 1	탁성우	NNG	B_SUBJ
 2	교수님	NNP	O
 3	오늘	NNG	B_TIME
@@ -598,9 +666,10 @@ $<탁성우:PROF> 교수님 오늘 수업 하 시 어
 5	하	VV	O
 6	시	EP	O
 7	어	EF	O
+8	?	SF	O
 
 ; 탁성우 교수님 내일 수업하셔?
-$<탁성우:PROF> 교수님 내일 수업 하 시 어
+$<탁성우:PROF> 교수님 <내일:TIME> 수업 하 시 어 ?
 1	탁성우	NNG	B_SUBJ
 2	교수님	NNP	O
 3	내일	NNG	B_TIME
@@ -608,9 +677,10 @@ $<탁성우:PROF> 교수님 내일 수업 하 시 어
 5	하	VV	O
 6	시	EP	O
 7	어	EF	O
+8	?	SF	O
 
 ; 탁성우 교수님 언제 수업하셔?
-$<탁성우:PROF> 교수님 언제 수업 하 시 어
+$<탁성우:PROF> 교수님 <언제:TIME> 수업 하 시 어 ?
 1	탁성우	NNG	B_SUBJ
 2	교수님	NNP	O
 3	언제	NNG	B_TIME
@@ -618,9 +688,10 @@ $<탁성우:PROF> 교수님 언제 수업 하 시 어
 5	하	VV	O
 6	시	EP	O
 7	어	EF	O
+8	?	SF	O
 
 ; 염근혁 교수님 지금 수업하셔?
-$<염근혁:PROF> 교수님 지금 수업 하 시 어
+$<염근혁:PROF> 교수님 <지금:TIME> 수업 하 시 어 ?
 1	염근혁	NNG	B_SUBJ
 2	교수님	NNP	O
 3	지금	NNG	B_TIME
@@ -628,9 +699,10 @@ $<염근혁:PROF> 교수님 지금 수업 하 시 어
 5	하	VV	O
 6	시	EP	O
 7	어	EF	O
+8	?	SF	O
 
 ; 염근혁 교수님 오늘 수업하셔?
-$<염근혁:PROF> 교수님 오늘 수업 하 시 어
+$<염근혁:PROF> 교수님 <오늘:TIME> 수업 하 시 어 ?
 1	염근혁	NNG	B_SUBJ
 2	교수님	NNP	O
 3	오늘	NNG	B_TIME
@@ -638,9 +710,10 @@ $<염근혁:PROF> 교수님 오늘 수업 하 시 어
 5	하	VV	O
 6	시	EP	O
 7	어	EF	O
+8	?	SF	O
 
 ; 염근혁 교수님 내일 수업하셔?
-$<염근혁:PROF> 교수님 내일 수업 하 시 어
+$<염근혁:PROF> 교수님 <내일:TIME> 수업 하 시 어 ?
 1	염근혁	NNG	B_SUBJ
 2	교수님	NNP	O
 3	내일	NNG	B_TIME
@@ -648,9 +721,10 @@ $<염근혁:PROF> 교수님 내일 수업 하 시 어
 5	하	VV	O
 6	시	EP	O
 7	어	EF	O
+8	?	SF	O
 
 ; 염근혁 교수님 언제 수업하셔?
-$<염근혁:PROF> 교수님 언제 수업 하 시 어
+$<염근혁:PROF> 교수님 <언제:TIME> 수업 하 시 어 ?
 1	염근혁	NNG	B_SUBJ
 2	교수님	NNP	O
 3	언제	NNG	B_TIME
@@ -658,9 +732,10 @@ $<염근혁:PROF> 교수님 언제 수업 하 시 어
 5	하	VV	O
 6	시	EP	O
 7	어	EF	O
+8	?	SF	O
 
 ; 송길태 교수님 지금 수업하셔?
-$<송길태:PROF> 교수님 지금 수업 하 시 어
+$<송길태:PROF> 교수님 <지금:TIME> 수업 하 시 어 ?
 1	송길태	NNG	B_SUBJ
 2	교수님	NNP	O
 3	지금	NNG	B_TIME
@@ -668,9 +743,10 @@ $<송길태:PROF> 교수님 지금 수업 하 시 어
 5	하	VV	O
 6	시	EP	O
 7	어	EF	O
+8	?	SF	O
 
 ; 송길태 교수님 오늘 수업하셔?
-$<송길태:PROF> 교수님 오늘 수업 하 시 어
+$<송길태:PROF> 교수님 <오늘:TIME> 수업 하 시 어 ?
 1	송길태	NNG	B_SUBJ
 2	교수님	NNP	O
 3	오늘	NNG	B_TIME
@@ -678,9 +754,10 @@ $<송길태:PROF> 교수님 오늘 수업 하 시 어
 5	하	VV	O
 6	시	EP	O
 7	어	EF	O
+8	?	SF	O
 
 ; 송길태 교수님 내일 수업하셔?
-$<송길태:PROF> 교수님 내일 수업 하 시 어
+$<송길태:PROF> 교수님 <내일:TIME> 수업 하 시 어 ?
 1	송길태	NNG	B_SUBJ
 2	교수님	NNP	O
 3	내일	NNG	B_TIME
@@ -688,9 +765,10 @@ $<송길태:PROF> 교수님 내일 수업 하 시 어
 5	하	VV	O
 6	시	EP	O
 7	어	EF	O
+8	?	SF	O
 
 ; 송길태 교수님 언제 수업하셔?
-$<송길태:PROF> 교수님 언제 수업 하 시 어
+$<송길태:PROF> 교수님 <언제:TIME> 수업 하 시 어 ?
 1	송길태	NNG	B_SUBJ
 2	교수님	NNP	O
 3	언제	NNG	B_TIME
@@ -698,159 +776,182 @@ $<송길태:PROF> 교수님 언제 수업 하 시 어
 5	하	VV	O
 6	시	EP	O
 7	어	EF	O
+8	?	SF	O
 
 ; 6202호 지금 무슨 수업중이야?
-$<6202호:CLASSROOM> 지금 무슨 수업중 이 야
+$<6202호:CLASSROOM> <지금:TIME> 무슨 <수업:SUBJ> 중 이 야 ?
 1	6202호	NNG	B_CLASSROOM
 2	지금	NNG	B_TIME
 3	무슨	NNP	O
-4	수업중	NNP	O
-5	이	VV	O
-6	야	EF	O
+4	수업	NNG	B_SUBJ
+5	중	NNP	O
+6	이	VV	O
+7	야	EF	O
+8	?	SF	O
 
 ; 6202호 오늘 무슨 수업해?
-$<6202호:CLASSROOM> 오늘 무슨 수업해
+$<6202호:CLASSROOM> <오늘:TIME> 무슨 <수업:SUBJ> 해 ?
 1	6202호	NNG	B_CLASSROOM
 2	오늘	NNG	B_TIME
-3	무슨	NNG	B_SUBJ
-4	수업	NNP	O
+3	무슨	NNP	O
+4	수업	NNG B_SUBJ
 5	해	VV	O
-
+6	?	SF	O
 ; 6202호 내일 무슨 수업해?
-$<6202호:CLASSROOM> 내일 무슨 수업해
+$<6202호:CLASSROOM> <내일:TIME> 무슨 <수업:SUBJ> 해 ?
 1	6202호	NNG	B_CLASSROOM
 2	내일	NNG	B_TIME
-3	무슨	NNG	B_SUBJ
-4	수업	NNP	O
+3	무슨	NNP O
+4	수업	NNG	B_SUBJ
 5	해	VV	O
+6	?	SF	O
 
 ; 6203호 지금 무슨 수업중이야?
-$<6203호:CLASSROOM> 지금 무슨 수업중 이 야
+$<6203호:CLASSROOM> <지금:TIME> 무슨 <수업:SUBJ> 중 이 야 ?
 1	6203호	NNG	B_CLASSROOM
 2	지금	NNG	B_TIME
 3	무슨	NNP	O
-4	수업중	NNP	O
-5	이	VV	O
-6	야	EF	O
+4	수업	NNG	B_SUBJ
+5	중	NNP	O
+6	이	VV	O
+7	야	EF	O
+8	?	SF	O
 
 ; 6203호 오늘 무슨 수업해?
-$<6203호:CLASSROOM> 오늘 무슨 수업해
+$<6203호:CLASSROOM> <오늘:TIME> 무슨 <수업:SUBJ> 해 ?
 1	6203호	NNG	B_CLASSROOM
 2	오늘	NNG	B_TIME
-3	무슨	NNG	B_SUBJ
-4	수업	NNP	O
+3	무슨	NNP	O
+4	수업	NNG B_SUBJ
 5	해	VV	O
+6	?	SF	O
 
 ; 6203호 내일 무슨 수업해?
-$<6203호:CLASSROOM> 내일 무슨 수업해
+$<6203호:CLASSROOM> <내일:TIME> 무슨 <수업:SUBJ> 해 ?
 1	6203호	NNG	B_CLASSROOM
 2	내일	NNG	B_TIME
-3	무슨	NNG	B_SUBJ
-4	수업	NNP	O
+3	무슨	NNP O
+4	수업	NNG	B_SUBJ
 5	해	VV	O
+6	?	SF	O
 
 ; 6409호 지금 무슨 수업중이야?
-$<6409호:CLASSROOM> 지금 무슨 수업중 이 야
+$<6409호:CLASSROOM> <지금:TIME> 무슨 <수업:SUBJ> 중 이 야 ?
 1	6409호	NNG	B_CLASSROOM
 2	지금	NNG	B_TIME
 3	무슨	NNP	O
-4	수업중	NNP	O
-5	이	VV	O
-6	야	EF	O
+4	수업	NNG	B_SUBJ
+5	중	NNP	O
+6	이	VV	O
+7	야	EF	O
+8	?	SF	O
 
 ; 6409호 오늘 무슨 수업해?
-$<6409호:CLASSROOM> 오늘 무슨 수업해
+$<6409호:CLASSROOM> <오늘:TIME> 무슨 <수업:SUBJ> 해 ?
 1	6409호	NNG	B_CLASSROOM
 2	오늘	NNG	B_TIME
-3	무슨	NNG	B_SUBJ
-4	수업	NNP	O
+3	무슨	NNP	O
+4	수업	NNG B_SUBJ
 5	해	VV	O
+6	?	SF	O
 
 ; 6409호 내일 무슨 수업해?
-$<6409호:CLASSROOM> 내일 무슨 수업해
+$<6409호:CLASSROOM> <내일:TIME> 무슨 <수업:SUBJ> 해 ?
 1	6409호	NNG	B_CLASSROOM
 2	내일	NNG	B_TIME
-3	무슨	NNG	B_SUBJ
-4	수업	NNP	O
+3	무슨	NNP O
+4	수업	NNG	B_SUBJ
 5	해	VV	O
+6	?	SF	O
 
 ; 6514호 지금 무슨 수업중이야?
-$<6514호:CLASSROOM> 지금 무슨 수업중 이 야
+$<6514호:CLASSROOM> <지금:TIME> 무슨 <수업:SUBJ> 중 이 야 ?
 1	6514호	NNG	B_CLASSROOM
 2	지금	NNG	B_TIME
 3	무슨	NNP	O
-4	수업중	NNP	O
-5	이	VV	O
-6	야	EF	O
+4	수업	NNG	B_SUBJ
+5	중	NNP	O
+6	이	VV	O
+7	야	EF	O
+8	?	SF	O
 
 ; 6514호 오늘 무슨 수업해?
-$<6514호:CLASSROOM> 오늘 무슨 수업해
+$<6514호:CLASSROOM> <오늘:TIME> 무슨 <수업:SUBJ> 해 ?
 1	6514호	NNG	B_CLASSROOM
 2	오늘	NNG	B_TIME
-3	무슨	NNG	B_SUBJ
-4	수업	NNP	O
+3	무슨	NNP	O
+4	수업	NNG B_SUBJ
 5	해	VV	O
+6	?	SF	O
 
 ; 6514호 내일 무슨 수업해?
-$<6514호:CLASSROOM> 내일 무슨 수업해
+$<6514호:CLASSROOM> <내일:TIME> 무슨 <수업:SUBJ> 해 ?
 1	6514호	NNG	B_CLASSROOM
 2	내일	NNG	B_TIME
-3	무슨	NNG	B_SUBJ
-4	수업	NNP	O
+3	무슨	NNP O
+4	수업	NNG	B_SUBJ
 5	해	VV	O
+6	?	SF	O
 
 ; 6515호 지금 무슨 수업중이야?
-$<6515호:CLASSROOM> 지금 무슨 수업중 이 야
-1	6515호	NNG	B_CLASSROOM
+$<6515호:CLASSROOM> <지금:TIME> 무슨 <수업:SUBJ> 중 이 야 ?
+1	6202호	NNG	B_CLASSROOM
 2	지금	NNG	B_TIME
 3	무슨	NNP	O
-4	수업중	NNP	O
-5	이	VV	O
-6	야	EF	O
+4	수업	NNG	B_SUBJ
+5	중	NNP	O
+6	이	VV	O
+7	야	EF	O
 
 ; 6515호 오늘 무슨 수업해?
-$<6515호:CLASSROOM> 오늘 무슨 수업해
+$<6515호:CLASSROOM> <오늘:TIME> 무슨 <수업:SUBJ> 해 ?
 1	6515호	NNG	B_CLASSROOM
 2	오늘	NNG	B_TIME
-3	무슨	NNG	B_SUBJ
-4	수업	NNP	O
+3	무슨	NNP	O
+4	수업	NNG	B_SUBJ
 5	해	VV	O
+6	?	SF	O
 
 ; 6515호 내일 무슨 수업해?
-$<6514호:CLASSROOM> 내일 무슨 수업해
+$<6515호:CLASSROOM> <내일:TIME> 무슨 <수업:SUBJ> 해 ?
 1	6515호	NNG	B_CLASSROOM
 2	내일	NNG	B_TIME
-3	무슨	NNG	B_SUBJ
-4	수업	NNP	O
+3	무슨	NNP O
+4	수업	NNG	B_SUBJ
 5	해	VV	O
+6	?	SF	O
 
 ; 6516호 지금 무슨 수업중이야?
-$<6516호:CLASSROOM> 지금 무슨 수업중 이 야
+$<6516호:CLASSROOM> <지금:TIME> 무슨 <수업:SUBJ> 중 이 야 ?
 1	6516호	NNG	B_CLASSROOM
 2	지금	NNG	B_TIME
 3	무슨	NNP	O
-4	수업중	NNP	O
-5	이	VV	O
-6	야	EF	O
+4	수업	NNG	B_SUBJ
+5	중	NNP	O
+6	이	VV	O
+7	야	EF	O
+8	?	SF	O
 
 ; 6516호 오늘 무슨 수업해?
-$<6516호:CLASSROOM> 오늘 무슨 수업해
+$<6516호:CLASSROOM> <오늘:TIME> 무슨 <수업:SUBJ> 해 ?
 1	6516호	NNG	B_CLASSROOM
 2	오늘	NNG	B_TIME
-3	무슨	NNG	B_SUBJ
-4	수업	NNP	O
+3	무슨	NNP	O
+4	수업	NNG B_SUBJ
 5	해	VV	O
+6	?	SF	O
 
 ; 6516호 내일 무슨 수업해?
-$<6516호:CLASSROOM> 내일 무슨 수업해
+$<6516호:CLASSROOM> <내일:TIME> 무슨 <수업:SUBJ> 해 ?
 1	6516호	NNG	B_CLASSROOM
 2	내일	NNG	B_TIME
-3	무슨	NNG	B_SUBJ
-4	수업	NNP	O
+3	무슨	NNP O
+4	수업	NNG	B_SUBJ
 5	해	VV	O
+6	?	SF	O
 
 ; 정상화 교수님 어떤 과목 수업하셔?
-$<정상화:PROF> 교수님 어떤 과목 수업 하 시 어
+$<정상화:PROF> 교수님 어떤 <과목:SUBJ> 수업 하 시 어 ?
 1	정상화	NNG	B_PROF
 2	교수님	NNP	O
 3	어떤	NNP	O
@@ -858,9 +959,10 @@ $<정상화:PROF> 교수님 어떤 과목 수업 하 시 어
 5	수업하	VV	O
 6	시	EP	O
 7	어	EF	O
+8	?	SF	O
 
 ; 류광렬 교수님 어떤 과목 수업하셔?
-$<류광렬:PROF> 교수님 어떤 과목 수업 하 시 어
+$<류광렬:PROF> 교수님 어떤 <과목:SUBJ> 수업 하 시 어 ?
 1	류광렬	NNG	B_PROF
 2	교수님	NNP	O
 3	어떤	NNP	O
@@ -868,9 +970,10 @@ $<류광렬:PROF> 교수님 어떤 과목 수업 하 시 어
 5	수업하	VV	O
 6	시	EP	O
 7	어	EF	O
+8	?	SF	O
 
 ; 홍봉희 교수님 어떤 과목 수업하셔?
-$<홍봉희:PROF> 교수님 어떤 과목 수업 하 시 어
+$<홍봉희:PROF> 교수님 어떤 <과목:SUBJ> 수업 하 시 어 ?
 1	홍봉희	NNG	B_PROF
 2	교수님	NNP	O
 3	어떤	NNP	O
@@ -878,9 +981,10 @@ $<홍봉희:PROF> 교수님 어떤 과목 수업 하 시 어
 5	수업하	VV	O
 6	시	EP	O
 7	어	EF	O
+8	?	SF	O
 
 ; 최윤호 교수님 어떤 과목 수업하셔?
-$<최윤호:PROF> 교수님 어떤 과목 수업 하 시 어
+$<최윤호:PROF> 교수님 어떤 <과목:SUBJ> 수업 하 시 어?
 1	최윤호	NNG	B_PROF
 2	교수님	NNP	O
 3	어떤	NNP	O
@@ -888,9 +992,10 @@ $<최윤호:PROF> 교수님 어떤 과목 수업 하 시 어
 5	수업하	VV	O
 6	시	EP	O
 7	어	EF	O
+8	?	SF	O
 
 ; 감진규 교수님 어떤 과목 수업하셔?
-$<감진규:PROF> 교수님 어떤 과목 수업 하 시 어
+$<감진규:PROF> 교수님 어떤 <과목:SUBJ> 수업 하 시 어 ?
 1	감진규	NNG	B_PROF
 2	교수님	NNP	O
 3	어떤	NNP	O
@@ -898,9 +1003,10 @@ $<감진규:PROF> 교수님 어떤 과목 수업 하 시 어
 5	수업하	VV	O
 6	시	EP	O
 7	어	EF	O
+8	?	SF	O
 
 ; 우균 교수님 어떤 과목 수업하셔?
-$<우균:PROF> 교수님 어떤 과목 수업 하 시 어
+$<우균:PROF> 교수님 어떤 <과목:SUBJ> 수업 하 시 어 ?
 1	우균	NNG	B_PROF
 2	교수님	NNP	O
 3	어떤	NNP	O
@@ -908,9 +1014,10 @@ $<우균:PROF> 교수님 어떤 과목 수업 하 시 어
 5	수업하	VV	O
 6	시	EP	O
 7	어	EF	O
+8	?	SF	O
 
 ; 이기준 교수님 어떤 과목 수업하셔?
-$<이기준:PROF> 교수님 어떤 과목 수업 하 시 어
+$<이기준:PROF> 교수님 어떤 <과목:SUBJ> 수업 하 시 어 ?
 1	이기준	NNG	B_PROF
 2	교수님	NNP	O
 3	어떤	NNP	O
@@ -918,9 +1025,10 @@ $<이기준:PROF> 교수님 어떤 과목 수업 하 시 어
 5	수업하	VV	O
 6	시	EP	O
 7	어	EF	O
+8	?	SF	O
 
 ; 탁성우 교수님 어떤 과목 수업하셔?
-$<탁성우:PROF> 교수님 어떤 과목 수업 하 시 어
+$<탁성우:PROF> 교수님 어떤 <과목:SUBJ> 수업 하 시 어 ?
 1	탁성우	NNG	B_PROF
 2	교수님	NNP	O
 3	어떤	NNP	O
@@ -928,9 +1036,10 @@ $<탁성우:PROF> 교수님 어떤 과목 수업 하 시 어
 5	수업하	VV	O
 6	시	EP	O
 7	어	EF	O
+8	?	SF	O
 
 ; 염근혁 교수님 어떤 과목 수업하셔?
-$<염근혁:PROF> 교수님 어떤 과목 수업 하 시 어
+$<염근혁:PROF> 교수님 어떤 <과목:SUBJ> 수업 하 시 어 ?
 1	염근혁	NNG	B_PROF
 2	교수님	NNP	O
 3	어떤	NNP	O
@@ -938,9 +1047,10 @@ $<염근혁:PROF> 교수님 어떤 과목 수업 하 시 어
 5	수업하	VV	O
 6	시	EP	O
 7	어	EF	O
+8	?	SF	O
 
 ; 송길태 교수님 어떤 과목 수업하셔?
-$<송길태:PROF> 교수님 어떤 과목 수업 하 시 어
+$<송길태:PROF> 교수님 어떤 <과목:SUBJ> 수업 하 시 어 ?
 1	송길태	NNG	B_PROF
 2	교수님	NNP	O
 3	어떤	NNP	O
@@ -948,9 +1058,10 @@ $<송길태:PROF> 교수님 어떤 과목 수업 하 시 어
 5	수업하	VV	O
 6	시	EP	O
 7	어	EF	O
+8	?	SF	O
 
 ; 임베디드시스템 어느 교수님께서 수업하셔?
-$<임베디드시스템:SUBJ> 어느 교수님 께서 수업하 시 어
+$<임베디드시스템:SUBJ> 어느 <교수님:PROF> 께서 수업하 시 어 ?
 1	임베디드시스템	NNG	B_SUBJ
 2	어느	NNP	O
 3	교수님	NNG	B_PROF
@@ -958,10 +1069,10 @@ $<임베디드시스템:SUBJ> 어느 교수님 께서 수업하 시 어
 5	수업하	VV	O
 6	시	EP	O
 7	어	EF	O
-A
+8	?	SF	O
 
 ; I프로그래밍 어느 교수님께서 수업하셔?
-$<AI프로그래밍:SUBJ> 어느 교수님 께서 수업하 시 어
+$<AI프로그래밍:SUBJ> 어느 <교수님:PROF> 께서 수업하 시 어 ?
 1	AI프로그래밍	NNG	B_SUBJ
 2	어느	NNP	O
 3	교수님	NNG	B_PROF
@@ -969,9 +1080,10 @@ $<AI프로그래밍:SUBJ> 어느 교수님 께서 수업하 시 어
 5	수업하	VV	O
 6	시	EP	O
 7	어	EF	O
+8	?	SF	O
 
 ; 자료구조 어느 교수님께서 수업하셔?
-$<자료구조:SUBJ> 어느 교수님 께서 수업하 시 어
+$<자료구조:SUBJ> 어느 <교수님:PROF> 께서 수업하 시 어 ?
 1	자료구조	NNG	B_SUBJ
 2	어느	NNP	O
 3	교수님	NNG	B_PROF
@@ -979,9 +1091,10 @@ $<자료구조:SUBJ> 어느 교수님 께서 수업하 시 어
 5	수업하	VV	O
 6	시	EP	O
 7	어	EF	O
+8	?	SF	O
 
 ; 네트워크보안 어느 교수님께서 수업하셔?
-$<네트워크보안:SUBJ> 어느 교수님 께서 수업하 시 어
+$<네트워크보안:SUBJ> 어느 <교수님:PROF> 께서 수업하 시 어 ?
 1	네트워크보안	NNG	B_SUBJ
 2	어느	NNP	O
 3	교수님	NNG	B_PROF
@@ -989,9 +1102,10 @@ $<네트워크보안:SUBJ> 어느 교수님 께서 수업하 시 어
 5	수업하	VV	O
 6	시	EP	O
 7	어	EF	O
+8	?	SF	O
 
 ; 인공지능 어느 교수님께서 수업하셔?
-$<인공지능:SUBJ> 어느 교수님 께서 수업하 시 어
+$<인공지능:SUBJ> 어느 <교수님:PROF> 께서 수업하 시 어 ?
 1	인공지능	NNG	B_SUBJ
 2	어느	NNP	O
 3	교수님	NNG	B_PROF
@@ -999,9 +1113,10 @@ $<인공지능:SUBJ> 어느 교수님 께서 수업하 시 어
 5	수업하	VV	O
 6	시	EP	O
 7	어	EF	O
+8	?	SF	O
 
 ; 컴파일러 어느 교수님께서 수업하셔?
-$<컴파일러:SUBJ> 어느 교수님 께서 수업하 시 어
+$<컴파일러:SUBJ> 어느 <교수님:PROF> 께서 수업하 시 어 ?
 1	컴파일러	NNG	B_SUBJ
 2	어느	NNP	O
 3	교수님	NNG	B_PROF
@@ -1009,9 +1124,10 @@ $<컴파일러:SUBJ> 어느 교수님 께서 수업하 시 어
 5	수업하	VV	O
 6	시	EP	O
 7	어	EF	O
+8	?	SF	O
 
 ; 데이터베이스 어느 교수님께서 수업하셔?
-$<데이터베이스:SUBJ> 어느 교수님 께서 수업하 시 어
+$<데이터베이스:SUBJ> 어느 <교수님:PROF> 께서 수업하 시 어 ?
 1	데이터베이스	NNG	B_SUBJ
 2	어느	NNP	O
 3	교수님	NNG	B_PROF
@@ -1019,9 +1135,10 @@ $<데이터베이스:SUBJ> 어느 교수님 께서 수업하 시 어
 5	수업하	VV	O
 6	시	EP	O
 7	어	EF	O
+8	?	SF	O
 
 ; 컴퓨터네트워크 어느 교수님께서 수업하셔?
-$<컴퓨터네트워크:SUBJ> 어느 교수님 께서 수업하 시 어
+$<컴퓨터네트워크:SUBJ> 어느 <교수님:PROF> 께서 수업하 시 어 ?
 1	컴퓨터네트워크	NNG	B_SUBJ
 2	어느	NNP	O
 3	교수님	NNG	B_PROF
@@ -1029,9 +1146,10 @@ $<컴퓨터네트워크:SUBJ> 어느 교수님 께서 수업하 시 어
 5	수업하	VV	O
 6	시	EP	O
 7	어	EF	O
+8	?	SF	O
 
 ; 소프트웨어공학 어느 교수님께서 수업하셔?
-$<소프트웨어공학:SUBJ> 어느 교수님 께서 수업하 시 어
+$<소프트웨어공학:SUBJ> 어느 <교수님:PROF> 께서 수업하 시 어 ?
 1	소프트웨어공학	NNG	B_SUBJ
 2	어느	NNP	O
 3	교수님	NNG	B_PROF
@@ -1039,9 +1157,10 @@ $<소프트웨어공학:SUBJ> 어느 교수님 께서 수업하 시 어
 5	수업하	VV	O
 6	시	EP	O
 7	어	EF	O
+8	?	SF	O
 
 ; 데이터마이닝 어느 교수님께서 수업하셔?
-$데이터마이닝 어느 교수님 께서 수업하 시 어
+$<데이터마이닝:SUBJ> 어느 <교수님:PROF> 께서 수업하 시 어 ?
 1	데이터마이닝	NNG	B_SUBJ
 2	어느	NNP	O
 3	교수님	NNG	B_PROF
@@ -1049,9 +1168,10 @@ $데이터마이닝 어느 교수님 께서 수업하 시 어
 5	수업하	VV	O
 6	시	EP	O
 7	어	EF	O
+8	?	SF	O
 
 ; 6202호 지금 어느 교수님께서 수업하셔?
-$<6202호:CLASSROOM> 지금 어느 교수님 께서 수업하 시 어
+$<6202호:CLASSROOM> <지금:TIME> 어느 <교수님:PROF> 께서 수업하 시 어 ?
 1	6202호	NNG	B_CLASSROOM
 2	지금	NNG	B_TIME
 3	어느	NNP	O
@@ -1060,9 +1180,10 @@ $<6202호:CLASSROOM> 지금 어느 교수님 께서 수업하 시 어
 6	수업하	VV	O
 7	시	EP	O
 8	어	EF	O
+9	?	SF	O
 
 ; 6203호 지금 어느 교수님께서 수업하셔?
-$<6203호:CLASSROOM> 지금 어느 교수님 께서 수업하 시 어
+$<6203호:CLASSROOM> <지금:TIME> 어느 <교수님:PROF> 께서 수업하 시 어 ?
 1	6203호	NNG	B_CLASSROOM
 2	지금	NNG	B_TIME
 3	어느	NNP	O
@@ -1071,9 +1192,10 @@ $<6203호:CLASSROOM> 지금 어느 교수님 께서 수업하 시 어
 6	수업하	VV	O
 7	시	EP	O
 8	어	EF	O
+9	?	SF	O
 
 ; 6409호 지금 어느 교수님께서 수업하셔?
-$<6409호:CLASSROOM> 지금 어느 교수님 께서 수업하 시 어
+$<6409호:CLASSROOM> <지금:TIME> 어느 <교수님:PROF> 께서 수업하 시 어 ?
 1	6409호	NNG	B_CLASSROOM
 2	지금	NNG	B_TIME
 3	어느	NNP	O
@@ -1082,9 +1204,10 @@ $<6409호:CLASSROOM> 지금 어느 교수님 께서 수업하 시 어
 6	수업하	VV	O
 7	시	EP	O
 8	어	EF	O
+9	?	SF	O
 
 ; 6514호 지금 어느 교수님께서 수업하셔?
-$<6514호:CLASSROOM> 지금 어느 교수님 께서 수업하 시 어
+$<6514호:CLASSROOM> <지금:TIME> 어느 <교수님:PROF> 께서 수업하 시 어 ?
 1	6514호	NNG	B_CLASSROOM
 2	지금	NNG	B_TIME
 3	어느	NNP	O
@@ -1093,9 +1216,10 @@ $<6514호:CLASSROOM> 지금 어느 교수님 께서 수업하 시 어
 6	수업하	VV	O
 7	시	EP	O
 8	어	EF	O
+9	?	SF	O
 
 ; 6515호 지금 어느 교수님께서 수업하셔?
-$<6514호:CLASSROOM> 지금 어느 교수님 께서 수업하 시 어
+$<6514호:CLASSROOM> <지금:TIME> 어느 <교수님:PROF> 께서 수업하 시 어
 1	6515호	NNG	B_CLASSROOM
 2	지금	NNG	B_TIME
 3	어느	NNP	O
@@ -1106,7 +1230,7 @@ $<6514호:CLASSROOM> 지금 어느 교수님 께서 수업하 시 어
 8	어	EF	O
 
 ; 6516호 지금 어느 교수님께서 수업하셔?
-$<6516호:CLASSROOM> 지금 어느 교수님 께서 수업하 시 어
+$<6516호:CLASSROOM> <지금:TIME> 어느 <교수님:PROF> 께서 수업하 시 어 ?
 1	6516호	NNG	B_CLASSROOM
 2	지금	NNG	B_TIME
 3	어느	NNP	O
@@ -1115,163 +1239,184 @@ $<6516호:CLASSROOM> 지금 어느 교수님 께서 수업하 시 어
 6	수업하	VV	O
 7	시	EP	O
 8	어	EF	O
+9	?	SF	O
 
 ; 임베디드시스템 수업 어디서 해?
-$<임베디드시스템:SUBJ> 수업 어디서 해?
+$<임베디드시스템:SUBJ> 수업 <어디서:CLASSROOM> 해 ?
 1	임베디드시스템	NNG	B_SUBJ
 2	수업	NNP	O
 3	어디서	NNG	B_CLASSROOM
 4	해	VV	O
+5	?	SF	O
 
 ; AI프로그래밍 수업 어디서 해?
-$<AI프로그래밍:SUBJ> 수업 어디서 해?
+$<AI프로그래밍:SUBJ> 수업 <어디서:CLASSROOM> 해 ?
 1	AI프로그래밍	NNG	B_SUBJ
 2	수업	NNP	O
 3	어디서	NNG	B_CLASSROOM
 4	해	VV	O
+5	?	SF	O
 
 ; 자료구조 수업 어디서 해?
-$<자료구조:SUBJ> 수업 어디서 해?
+$<자료구조:SUBJ> 수업 <어디서:CLASSROOM> 해 ?
 1	자료구조	NNG	B_SUBJ
 2	수업	NNP	O
 3	어디서	NNG	B_CLASSROOM
 4	해	VV	O
+5	?	SF	O
 
 ; 네트워크보안 수업 어디서 해?
-$<네트워크보안:SUBJ> 수업 어디서 해?
+$<네트워크보안:SUBJ> 수업 <어디서:CLASSROOM> 해 ?
 1	네트워크보안	NNG	B_SUBJ
 2	수업	NNP	O
 3	어디서	NNG	B_CLASSROOM
 4	해	VV	O
+5	?	SF	O
 
 ; 인공지능 수업 어디서 해?
-$<인공지능:SUBJ> 수업 어디서 해?
+$<인공지능:SUBJ> 수업 <어디서:CLASSROOM> 해 ?
 1	인공지능	NNG	B_SUBJ
 2	수업	NNP	O
 3	어디서	NNG	B_CLASSROOM
 4	해	VV	O
-컴파일러 수업 어디서 해?
+5	?	SF	O
 
-; $<컴파일러:SUBJ> 수업 어디서 해?
+컴파일러 수업 어디서 해?
+; $<컴파일러:SUBJ> 수업 <어디서:CLASSROOM> 해 ?
 1	컴파일러	NNG	B_SUBJ
 2	수업	NNP	O
 3	어디서	NNG	B_CLASSROOM
 4	해	VV	O
+5	?	SF	O
 
 ; 데이터베이스 수업 어디서 해?
-$<데이터베이스:SUBJ> 수업 어디서 해?
+$<데이터베이스:SUBJ> 수업 <어디서:CLASSROOM> 해 ?
 1	데이터베이스	NNG	B_SUBJ
 2	수업	NNP	O
 3	어디서	NNG	B_CLASSROOM
 4	해	VV	O
+5	?	SF	O
 
 ; 컴퓨터네트워크 수업 어디서 해?
-$<컴퓨터네트워크:SUBJ> 수업 어디서 해?
+$<컴퓨터네트워크:SUBJ> 수업 <어디서:CLASSROOM> 해 ?
 1	컴퓨터네트워크	NNG	B_SUBJ
 2	수업	NNP	O
 3	어디서	NNG	B_CLASSROOM
 4	해	VV	O
+5	?	SF	O
 
 ; 소프트웨어공학 수업 어디서 해?
-$<소프트웨어공학:SUBJ> 수업 어디서 해?
+$<소프트웨어공학:SUBJ> 수업 <어디서:CLASSROOM> 해 ?
 1	소프트웨어공학	NNG	B_SUBJ
 2	수업	NNP	O
 3	어디서	NNG	B_CLASSROOM
 4	해	VV	O
+5	?	SF	O
 
 ; 데이터마이닝 수업 어디서 해?
-$데이터마이닝 수업 어디서 해?
+$<데이터마이닝:SUBJ> 수업 <어디서:CLASSROOM> 해 ?
 1	데이터마이닝	NNG	B_SUBJ
 2	수업	NNP	O
 3	어디서	NNG	B_CLASSROOM
 4	해	VV	O
+5	?	SF	O
 
 ; 정상화 교수님 어디서 수업하셔?
-$<정상화:PROF> 교수님 어디서 수업 하 시 어
+$<정상화:PROF> 교수님 <어디서:CLASSROOM> 수업하 시 어 ?
 1	정상화	NNG	B_PROF
 2	교수님	NNP	O
 3	어디서	NNG	B_CLASSROOM
 4	수업하	VV	O
 5	시	EP	O
 6	어	EF	O
+7	?	SF	O
 
 ; 류광렬 교수님 어디서 수업하셔?
-$<류광렬:PROF> 교수님 어디서 수업 하 시 어
+$<류광렬:PROF> 교수님 <어디서:CLASSROOM> 수업하 시 어 ?
 1	류광렬	NNG	B_PROF
 2	교수님	NNP	O
 3	어디서	NNG	B_CLASSROOM
 4	수업하	VV	O
 5	시	EP	O
 6	어	EF	O
+7	?	SF	O
 
 ; 홍봉희 교수님 어디서 수업하셔?
-$<홍봉희:PROF> 교수님 어디서 수업 하 시 어
+$<홍봉희:PROF> 교수님 <어디서:CLASSROOM> 수업하 시 어 ?
 1	홍봉희	NNG	B_PROF
 2	교수님	NNP	O
 3	어디서	NNG	B_CLASSROOM
 4	수업하	VV	O
 5	시	EP	O
 6	어	EF	O
+7	?	SF	O
 
-; 최윤호 교수님 어디서 어디서 수업하셔?
-$<최윤호:PROF> 교수님 어디서 수업 하 시 어
+; 최윤호 교수님 어디서 수업하셔?
+$<최윤호:PROF> 교수님 <어디서:CLASSROOM> 수업하 시 어 ?
 1	최윤호	NNG	B_PROF
 2	교수님	NNP	O
 3	어디서	NNG	B_CLASSROOM
 4	수업하	VV	O
 5	시	EP	O
 6	어	EF	O
+7	?	SF	O
 
-; 감진규 교수님 어디서 어디서 수업하셔?
-$<감진규:PROF> 교수님 어디서 수업 하 시 어
+; 감진규 교수님 어디서 수업하셔?
+$<감진규:PROF> 교수님 <어디서:CLASSROOM> 수업하 시 어 ?
 1	감진규	NNG	B_PROF
 2	교수님	NNP	O
 3	어디서	NNG	B_CLASSROOM
 4	수업하	VV	O
 5	시	EP	O
 6	어	EF	O
+7	?	SF	O
 
-; 우균 교수님 어디서 어디서 수업하셔?
-$<우균:PROF> 교수님 어디서 수업 하 시 어
+; 우균 교수님 어디서 수업하셔?
+$<우균:PROF> 교수님 <어디서:CLASSROOM> 수업하 시 어 ?
 1	우균	NNG	B_PROF
 2	교수님	NNP	O
 3	어디서	NNG	B_CLASSROOM
 4	수업하	VV	O
 5	시	EP	O
 6	어	EF	O
+7	?	SF	O
 
-; 이기준 교수님 어디서 어디서 수업하셔?
-$<이기준:PROF> 교수님 어디서 수업 하 시 어
+; 이기준 교수님 어디서 수업하셔?
+$<이기준:PROF> 교수님 <어디서:CLASSROOM> 수업하 시 어 ?
 1	이기준	NNG	B_PROF
 2	교수님	NNP	O
 3	어디서	NNG	B_CLASSROOM
 4	수업하	VV	O
 5	시	EP	O
 6	어	EF	O
+7	?	SF	O
 
 ; 탁성우 교수님 어디서 수업하셔?
-$<탁성우:PROF> 교수님 어디서 수업 하 시 어
+$<탁성우:PROF> 교수님 <어디서:CLASSROOM> 수업하 시 어 ?
 1	탁성우	NNG	B_PROF
 2	교수님	NNP	O
 3	어디서	NNG	B_CLASSROOM
 4	수업하	VV	O
 5	시	EP	O
 6	어	EF	O
+7	?	SF	O
 
 ; 염근혁 교수님 어디서 수업하셔?
-$<염근혁:PROF> 교수님 어디서 수업 하 시 어
+$<염근혁:PROF> 교수님 <어디서:CLASSROOM> 수업하 시 어 ?
 1	염근혁	NNG	B_PROF
 2	교수님	NNP	O
 3	어디서	NNG	B_CLASSROOM
 4	수업하	VV	O
 5	시	EP	O
 6	어	EF	O
+7	?	SF	O
 
-; 송길태 교수님 어디서 어디서 수업하셔?
-$<송길태:PROF> 교수님 어디서 수업 하 시 어
+; 송길태 교수님 어디서 수업하셔?
+$<송길태:PROF> 교수님 <어디서:CLASSROOM> 수업하 시 어 ?
 1	송길태	NNG	B_PROF
 2	교수님	NNP	O
 3	어디서	NNG	B_CLASSROOM
 4	수업하	VV	O
 5	시	EP	O
 6	어	EF	O
+7	?	SF	O

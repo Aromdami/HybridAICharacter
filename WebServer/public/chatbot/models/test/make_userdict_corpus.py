@@ -20,7 +20,7 @@ def read_file(file_name):
 
 
 corpus = read_file(file)
-file = open("corpus.txt", 'w')
+file = open("corpus.txt", 'w', encoding='utf-8')
 for c in corpus:
     c = "{}\t{}\t{}\n".format('0000', c, 0)
     file.write(c)
