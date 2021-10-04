@@ -8,7 +8,7 @@ from utils.Preprocess import Preprocess
 # 학습 파일 불러오기
 def read_file(file_name):
     sents = []
-    with open(file_name, 'r', encoding='utf-8') as f:
+    with open(file_name, 'r', encoding='utf8') as f:
         lines = f.readlines()
         for idx, l in enumerate(lines):
             if l[0] == ';' and lines[idx + 1][0] == '$':
@@ -24,7 +24,7 @@ def read_file(file_name):
 p = Preprocess(word2index_dic='../../train_tools/dict/chatbot_dict.bin',
                userdic='../../utils/user_dic.tsv')
 
-# 학습용 말뭉치 데이터를 불러옴
+# 학습용 말뭉치 데이터를 불러옴\
 corpus = read_file('ner_train.txt')
 
 # 말뭉치 데이터에서 단어와 BIO 태그만 불러와 학습용 데이터셋 생성

@@ -3,12 +3,15 @@ from konlpy.tag import Komoran
 from random import  *
 
 date_file = 'date.csv'
-food_file = 'food.csv'
-sent_file = '주문조합.csv'
+subj_file = 'subj.csv'
+prof_file  = 'prof.csv'
+classroom_file = 'classroom.csv'
+
+sent_file = '질문조합.csv'
 
 komoran = Komoran(userdic='../../utils/user_dic.tsv')
 
-file = open("output_ner_train.txt", 'w', encoding='utf-8')
+file = open("output_ner_train.txt", 'w')
 with open(date_file, mode='r', encoding='utf-8-sig') as df:
     dr = csv.reader(df)
     for k, r in enumerate(dr):

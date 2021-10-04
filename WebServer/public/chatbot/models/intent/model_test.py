@@ -2,13 +2,12 @@ import tensorflow as tf
 from tensorflow.keras.models import Model, load_model
 from tensorflow.keras import preprocessing
 
-intent_labels = {0: "인사", 1: "욕설", 2: "주문", 3: "예약", 4: "기타"}
+intent_labels = {0: "시간", 1: "과목명", 2: "교수명", 3: "강의실"}
 
 # 의도 분류 모델 불러오기
 model = load_model('intent_model.h5')
 
-query = "오늘 탕수육 주문 가능한가요?"
-query = "안녕하세요?"
+query = "AI프로그래밍 수업 어디서 해?"
 from utils.Preprocess import Preprocess
 p = Preprocess(word2index_dic='../../train_tools/dict/chatbot_dict.bin',
                userdic='../../utils/user_dic.tsv')

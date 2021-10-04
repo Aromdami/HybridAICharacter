@@ -19,7 +19,6 @@ try:
       `ner` VARCHAR(1024) NULL,
       `query` TEXT NULL,
       `answer` TEXT NOT NULL,
-      `answer_image` VARCHAR(2048) NULL,
       PRIMARY KEY (`id`))
     ENGINE = InnoDB DEFAULT CHARSET=utf8
     '''

@@ -4,11 +4,11 @@ from random import  *
 
 date_file = 'date.csv'
 food_file = 'food.csv'
-sent_file = '주문조합.csv'
+sent_file = '질문조합.csv'
 
 komoran = Komoran(userdic='../../utils/user_dic.tsv')
 
-file = open("corpus.txt", 'w', encoding='utf8')
+file = open("corpus.txt", 'w')
 
 for cnt in range(5):
     with open(date_file, mode='r', encoding='utf-8-sig') as df:

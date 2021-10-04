@@ -32,14 +32,14 @@ class FindAnswer:
             sql = self._make_query(intent_name, None)
             answer = self.db.select_one(sql)
 
-        return (answer['answer'], answer['answer_image'])
+        return (answer['answer'])
 
     # NER 태그를 실제 입력된 단어로 변환
     def tag_to_word(self, ner_predicts, answer):
         for word, tag in ner_predicts:
 
             # 변환해야하는 태그가 있는 경우 추가
-            if tag == 'B_FOOD' or tag == 'B_DT' or tag == 'B_TI':
+            if tag == 'B_TIME' or tag == 'B_SUBJ' or tag == 'B_PROF' or tag=='B_CLASSROOM':
                 answer = answer.replace(tag, word)
 
         answer = answer.replace('{', '')

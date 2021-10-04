@@ -7,7 +7,7 @@ p = Preprocess(word2index_dic='../../train_tools/dict/chatbot_dict.bin',
                userdic='../../utils/user_dic.tsv')
 
 
-new_sentence = '오늘 오전 13시 2분에 탕수육 주문 하고 싶어요'
+new_sentence = '오늘 정상화교수님 수업 몇시에 어디서 하셔?'
 pos = p.pos(new_sentence)
 keywords = p.get_keywords(pos, without_tag=True)
 new_seq = p.get_wordidx_sequence(keywords)
@@ -24,7 +24,7 @@ p = np.argmax(p, axis=-1) # 예측된 NER 인덱스 값 추출
 
 print("{:10} {:5}".format("단어", "예측된 NER"))
 print("-" * 50)
-index_to_ner = {1: 'O', 2: 'B_DT', 3: 'B_FOOD', 4: 'I', 5: 'B_OG', 6: 'B_PS', 7: 'B_LC', 8: 'NNP', 9: 'B_TI', 0: 'PAD'}
+index_to_ner = {1: 'O', 2: 'B_TIME', 3: 'B_SUBJ', 4: 'I', 5: 'B_PROF', 6: 'B_CLASSROOM', 7: 'B_PS', 8: 'B_LC', 9: 'NNP',  0: 'PAD'}
 for w, pred in zip(keywords, p[0]):
     print("{:10} {:5}".format(w, index_to_ner[pred]))
 
