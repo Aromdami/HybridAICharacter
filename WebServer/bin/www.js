@@ -34,6 +34,8 @@ let chatLog = new chatDB.Database('..\public\db\chatlog.db',
 function chatLogDB_Init()
 {
   chatLog.run("DROP TABLE chatR1");
+  chatLog.run("DROP TABLE chatR2");
+  chatLog.run("DROP TABLE chatR3");
   var qry1, qry2, qry3;
   //채팅방 대화 기록 용 테이블 생성
   qry1 = 'CREATE TABLE IF NOT EXISTS chatR';
